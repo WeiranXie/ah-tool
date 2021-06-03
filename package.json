@@ -18,8 +18,6 @@
     "updates": "rm -rf node_modules package-lock.json && npx '@juitnow/cmd-check-updates' --strict && npm install"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^14.1.2",
-    "contentful": "^8.3.5",
     "core-js": "^3.12.1",
     "detect-browser": "^5.2.0",
     "regenerator-runtime": "^0.13.8",
@@ -29,7 +27,6 @@
   },
   "devDependencies": {
     "@juit/vue-ts-checker": "^1.0.0",
-    "@juitnow/lib-schema-types": "^2.5.11",
     "@types/babel__core": "^7.1.14",
     "@types/babel__generator": "^7.6.2",
     "@types/mime-types": "^2.1.0",
