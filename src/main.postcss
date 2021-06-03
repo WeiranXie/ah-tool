@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  h1, h2, h3, h4 {
+    @apply font-h;
+  }
+
+  h2 {
+    @apply text-2xl;
+    @apply md:text-3xl;
+    @apply lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply lg:text-3xl;
+  }
+
+  ol {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  ol li {
+    list-style-type: disc;
+    margin-bottom: 0.25rem;
+    margin-left: 1.25rem;
+    > ul {
+      margin-top: 0.25rem;
+      li {
+        list-style-type: decimal;
+      }
+    }
+  }
+  .text-headline1 {
+    @apply tracking-tight;
+    @apply text-3xl;
+    @apply sm:text-4xl;
+    @apply md:text-5xl;
+    @apply xl:text-6xl;
+    @apply mb-4;
+    @apply md:mb-5;
+    @apply lg:mb-6;
+  }
+  .juit-container {
+    @apply xl:max-w-screen-xlcontent;
+    @apply lg:max-w-screen-lgcontent;
+    @apply px-5;
+    @apply xs:px-7;
+    @apply sm:px-8;
+    @apply md:px-10;
+    @apply lg:px-0;
+    @apply w-full;
+    @apply mx-auto;
+  }
+  .juit-section {
+    @apply relative;
+    @apply py-8;
+    @apply xs:py-12;
+    @apply sm:py-16;
+    @apply md:py-20;
+    @apply lg:py-28;
+  }
+}

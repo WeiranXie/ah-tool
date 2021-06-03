@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        if (w.location.hostname === 'localhost') return false
+        if (w.location.hostname === '127.0.0.1') return false
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', '<%= VUE_APP_GTM_ID %>');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Initial DataLayer data -->
+    <script>
+      (function(w, l) {
+        w[l] = w[l] || []
+        w[l].push({ pageValues: { originalLocation: w.location.href }})
+      })(window, 'dataLayer')
+    </script>
+
+    <script>
+      window.$isIE = window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0
+      window.onerror = function() {
+        if (window.$isIE) {
+          window.dataLayer.push({
+            event: 'virtualPageView',
+            pageValues: {
+              pagePath: '/browser-error.html',
+            },
+          })
+          window.location.href = '/browser-error.html'
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
