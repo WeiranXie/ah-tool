@@ -3,6 +3,7 @@ const VueTsCheckerPlugin = require('@juit/vue-ts-checker').VueTsCheckerPlugin
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/ah-tool' : '/',
   configureWebpack: {
     devServer: {
       disableHostCheck: true,

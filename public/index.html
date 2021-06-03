@@ -7,35 +7,6 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        if (w.location.hostname === 'localhost') return false
-        if (w.location.hostname === '127.0.0.1') return false
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', '<%= VUE_APP_GTM_ID %>');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Initial DataLayer data -->
-    <script>
-      (function(w, l) {
-        w[l] = w[l] || []
-        w[l].push({ pageValues: { originalLocation: w.location.href }})
-      })(window, 'dataLayer')
-    </script>
-
     <script>
       window.$isIE = window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0
       window.onerror = function() {
@@ -59,4 +30,23 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAZNZ0P3KSt_6mLcvXrOsAcmIHd7sYADgc",
+      authDomain: "ah-tool-xie.firebaseapp.com",
+      projectId: "ah-tool-xie",
+      storageBucket: "ah-tool-xie.appspot.com",
+      messagingSenderId: "127351526491",
+      appId: "1:127351526491:web:af9ebf707a04fc762adb7e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 </html>
