@@ -5,8 +5,7 @@
   "scripts": {
     "build": "rm -rf dist/ && npm run compile",
     "compile": "vue-cli-service build",
-    "render": "node tools/dist/prerender.js",
-    "deploy": "websync --config .github/deploy-dev.json",
+    "deploy": "firebase deploy --only hosting",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "vue-cli-service lint --no-fix --format stylish",
     "stylelint": "stylelint './src/**/*.{vue,css,scss,postcss}'",
@@ -41,8 +40,6 @@
     "@vue/eslint-config-standard": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "autoprefixer": "^10.2.5",
-    "contentful-management": "^7.19.1",
-    "contentful-typescript-codegen": "^3.2.2",
     "eslint": "^7.26.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-deprecation": "^1.2.1",
