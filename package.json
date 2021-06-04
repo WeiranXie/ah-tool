@@ -13,7 +13,7 @@
     "lintfix": "npm run eslintfix && npm run stylelintfix",
     "eslintfix": "vue-cli-service lint --format stylish",
     "stylelintfix": "stylelint --fix './src/**/*.{vue,css,scss,postcss}'",
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^3.12.1",
