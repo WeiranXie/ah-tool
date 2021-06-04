@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "echo 'Compiling tools...' && rm -rf tools/dist/ && tsc --build tools/tsconfig.json",
     "build": "rm -rf dist/ && npm run compile",
     "compile": "vue-cli-service build",
     "render": "node tools/dist/prerender.js",
@@ -15,7 +14,6 @@
     "eslintfix": "vue-cli-service lint --format stylish",
     "stylelintfix": "stylelint --fix './src/**/*.{vue,css,scss,postcss}'",
     "serve": "vue-cli-service serve",
-    "updates": "rm -rf node_modules package-lock.json && npx '@juitnow/cmd-check-updates' --strict && npm install"
   },
   "dependencies": {
     "core-js": "^3.12.1",
