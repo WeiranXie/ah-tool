@@ -1,0 +1,2459 @@
+{
+  "mythos": [
+    {
+      "name": "A Dark Wind Covers Arkham",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Inky clouds blow in from the east, bringing with them sickness and fear.",
+        "The terror level increases by 1. The maximum Stamina of all investigators in Arkham is reduced by 1.",
+        "Horror checks in Arkham are made at a -2 penalty."
+      ],
+      "clue": "The Witch House",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "A New Dawn!",
+      "type": "headline",
+      "text": [
+        "Each investigator who is currently at 2 or less Sanity gains 1 Sanity.",
+        "Each investigator who is currently at 2 or less Stamina gains 1 Stamina."
+      ],
+      "clue_alt": "Black Cave",
+      "clue": "Devil Reef",
+      "gate_alt": "The Witch House",
+      "gate": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "A Sandstorm!?",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Contrary to all common sense, a sandstorm hits Arkham out of nowhere. Sand clogs the streets and buries entire buildings. Strangely enough, some places that are said to have a dark past seem to be spared.",
+        "Investigators must spend 2 additional movement points to enter locations marked with a green diamond.",
+        "While this card is in play, any investigator who is in a street area during the city encounter phase and doesn't have to perform any other actions during the phase (e.g. an exhibit encounter) can perform a luck test (-1). If he is successful, he may draw 1 exhibit item."
+      ],
+      "clue": "Woods",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "A Strange Plague",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Investigators cannot gain Stamina except by receiving medical care in St. Mary's Hospital or from Vincent Lee."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Aldeberan Ascendant",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Flying creatures do not move to the sky.",
+        "Gates to Another Dimension cannot be closed or sealed."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Science Building",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "KIY"
+    },
+    {
+      "name": "Alien Technology",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Mig-Go have their toughness increased by 2. If an investigator passes a **Combat check** against a Mi-Go, he draws 1 extra Unique Item."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "All Quite in Arkham",
+      "type": "headline",
+      "text": ["Each player may pass a **Lick (-1) check** to be *Blessed*"],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Along Came Jones",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "The first investigator who ends his movement in the Train Station draws 1 Ally, then discards this card from play."
+      ],
+      "clue": "Wizards Hill",
+      "gate": "Devils Hopyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Amnesiac Professor's Memory Returns!",
+      "type": "headline",
+      "text": [
+        "Place 2 Clue tokens in each location with an elder sign."
+      ],
+      "clue_alt": "The Unnamable",
+      "clue": "Gardners Place",
+      "gate_alt": "Independence Square",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "An Evil Fog",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Will checks in Arkham are made at a -1 penalty",
+        "Sneak checks in Arkham are made at a +1 bonus",
+        "Fliers do not move"
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Angry Red Skies",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Will checks in Arkham are made at a -1 penalty.",
+        "Lore checks in Arkham are made at a +1 bonus. ",
+        "Fliers do not move to or from the Sky."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Another Time, Another Place!",
+      "type": "headline",
+      "text": [
+        "Every open gate leading to Another Dimension or Another Time releases one monster into its location.",
+        "All flying monsters move."
+      ],
+      "clue": ["Gardners Place", "Historical Society"],
+      "gate": "Woods",
+      "gateType": "burst",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Balmy",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Sneak checks in Arkham are made at a -1 penalty.",
+        "Fight checks in Arkham are made at a +1 bonus.",
+        "When moving, stalkers move to investigators in street areas or unstable locations up to 2 spaces away."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Bank Foreclosure",
+      "type": "headline",
+      "text": [
+        "An archaeological expedition to Egypt sponsored by the bank has disappeared without a trace ... which means no returns on the bank's investment. Concerned for their savings, townsfolk rush the bank to withdraw their funds.",
+        "Any investigators in Arkham with Bank Loans must pay them off immediately. You may sell items at half their list price (round down) if you do not have the $10; if you cannot or will not pay, you are arrested."
+      ],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Bank Targeted By Grifters",
+      "type": "rumor",
+      "text": [
+        "Ongoing Effect: Place 1 Clue token on this card at the end of every Mythos Phase (beginning the turn after it entered play).",
+        "Pass: If an investigator who either is the Deputy of Arkham or has a Sheldon Gang Membership (from the Dunwich Horror expansion) discards 3 Clue tokens while at the Bank of Arkham, return this card to the box. Each investigator then gains $10.",
+        "Fail: If there are 6 Clue tokens on this card, return it to the box. Each investigator must discard all of his money and any Retainer cards."
+      ],
+      "gate_alt": "Hibbs Roadhouse",
+      "gate": "Cold Spring Glen",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Big Storm Sweeps Arkham!",
+      "type": "headline",
+      "text": ["All monster in the Sky and Outskirts are returned to the cup."],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Bizarre Couriers",
+      "type": "headline",
+      "text": [
+        "They come bearing strange messages, wrapped in ragged cloaks and hiding their pale flesh. Those who receive packages from them shudder at the memory of them, saying that they have the appearance of *plump, white grave worms*.",
+        "Investigators in Arkham may immediately trade items or money without being in the same location. However, each investigator involved in the transaction loses 1 Sanity per item given or received."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "KIY"
+    },
+    {
+      "name": "Bizarre Dreams Plague Citizens!",
+      "type": "headline",
+      "text": [
+        "All Gugs and Nightgaunts in Arkham are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1."
+      ],
+      "clue": "The Witch House",
+      "gate": "Science Building",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Black Sabbath!",
+      "type": "headline",
+      "text": [
+        "All Rat-things, Witches, and Warlocks in Arkham are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1.",
+        "All flying monsters move."
+      ],
+      "clue": ["Historical Society", "Newspaper"],
+      "gate": "Woods",
+      "gateType": "burst",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Blackest Night",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Luck checks in Arkham are made at a -1 penalty.",
+        "Sneak checks in Arkham are made at a +1 bonus."
+      ],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Blood Magic",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Investigators who end their movement in Rivertown streets may choose to delve into the dark mysteries using their life force. They roll dice equal to their current Stamina, and for every failed die they lose 1 Stamina. If this reduces them to 0 Stamina, they are **devoured** and the player must start a new character. Itherwise, they gain 3 Clue tokens."
+      ],
+      "activity": "Rivertown Streets",
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Blue Flu!",
+      "type": "headline",
+      "text": [
+        "All investigators in jail are released. No investigators may be *arrested* until the end of the next turn. Leave this card in play until then to indicate this."
+      ],
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Blue Plate Special",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in Velma's Diner may spend up to $4 instead of having an Arkham encounter. They gain 1 Stamina and 1 Sanity for every $1 spent."
+      ],
+      "clue": "Wizards Hill",
+      "gate": "Devils Hopyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Blue Skies",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "All Investigators receive -1 Sneak, +1 Speed."
+      ],
+      "clue": "Black Cave",
+      "gate": "The Witch House",  
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Book Sale",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the Library may spend $2 instead of having an Arkham encounter. Any investigator that does so then takes the first Tome from the Unique Items deck.",
+        "All flying monsters move."
+      ],
+      "clue": ["Gardners Place", "Darkes Carnival"],
+      "gate": "Wizards Hill",
+      "gateType": "burst",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Brawling in the Streets",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Any investigator in a street area at the end of the Mythos phase must make a Fight (+0) check. If he fails and the terror level is 3 or less, he loses 1 Stamina. If he fails the check and the terror level is 4 or higher, he loses 2 Stamina."
+      ],
+      "clue_alt": "The Unnamable",
+      "clue": "Esoteric Order",
+      "gate": "Devil Reef",
+      "gate_alt": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Break-In at Neil's",
+      "type": "headline",
+      "text": [
+        "The thieves carelessly break a dangerous artifact, releasing 2 monsters into the South Shore streets."
+      ],
+      "clue": "Neils Curiosity Shop",
+      "gate": "Silver Twilight Lodge",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Brutal Accident!",
+      "type": "headline",
+      "text": [
+        "The first player must choose one investigator (even himself). That investigator loses 3 Stamina."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Campus Security Increased!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Miskatonic U. streets or locations are returned to the cup."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Cash on the Hoof!",
+      "type": "headline",
+      "text": [
+        "The first player finds $2 lying on the ground."
+      ],
+      "clue": "Devil Reef",
+      "gate": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Charity Auction!",
+      "type": "headline",
+      "text": [
+        "Deal a number of cards from the top of the Common Item deck equal to the number of players. Each player may purchase one item at its listed cost plus $1. Discard any items not purchased."
+      ],
+      "clue": "Woods",
+      "gate": "Hibbs Roadhouse",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Charity Case!",
+      "type": "headline",
+      "text": [
+        "The investigator with the lowest Sanity (the first player breaks ties) may move to Arkham Asylum and be delayed to restore his Sanity to its maximum.",
+        "All flying monsters move."
+      ],
+      "clue": ["Devil Reef", "Police Station"],
+      "gate": "Esoteric Order of Dagon",
+      "gateType": "burst",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Checkered Cab Trials Begin!",
+      "type": "headline",
+      "text": [
+        "Arkham experiments with mass transit.",
+        "All investigators in Arkham may move directly to any street location in Arkham as their entire move (ignore all monsters between their current location and their destination)."
+      ],
+      "clue": "Woods",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Church Boycotts Exhibit",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Father Michael organizes his congregation against the *Legacy of the Pharaohs* museum exhibit, calling the displays *ghastly and an affront against the Lord*.",
+        "Lore checks in Arkham are made at a -2 penalty. Will checks in Arkham are made at a +2 bonus."
+      ],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Historical Society",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Church Group Reclaims Southside!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Southside streets or locations are returned to the cup."
+      ],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Citizens Urged to Lock Doors",
+      "type": "headline",
+      "text": [
+        "Monsters appear in the Outskirts until the Outskirts limit is reached. If the Outskirts already contains the maximum number of monsters, return all of the monsters in the Outskirts to the monster cup and increase the terror level by 1.",
+        "All flying monsters move."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "burst",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "City Gripped by Blackouts!",
+      "type": "headline",
+      "text": [
+        "The General Store, Curiositie Shoppe, and Ye Olde Magick Shoppe are closed until the end of the next turn. Leave this card in play until then to indicate this."
+      ],
+      "close": [
+        "The General Store",
+        "Curiositie Shoppe",
+        "Ye Olde Magick Shoppe"
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Closed Mouths",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "While this card is in play, Clue tokens do not appear on the board when mythos cards are resolved.",
+        "No clue appears and no monsters move."
+      ],
+      "clue": null,
+      "gate": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": [],
+        "black": []
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Clothing Drive",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Father Michael sends out a call for clothing. *Have you seen our streets? The homeless have been reduced to wearing rags and dirty strips!* In fact, the beings he has seen on the street are mummies, come to life and escaped from the visiting museum exhibit!",
+        "While this card is in play, investigators without Exhibit Items must evade or fight a Mummy in each street location they enter. These Mummies have the same stats as Zombies except with a toughness of 2, and cannot be taken as trophies."
+      ],
+      "clue": "Black Cave",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Compass Needles Point South!",
+      "type": "headline",
+      "text": [
+        "The first player chooses two investigators. Those investigators immediately exchange locations, ignoring all monsters and movement restrictions."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Construction Crew Conundrum!",
+      "type": "headline",
+      "text": [
+        "While digging, a work crew uncovers ancient artifacts ... and ancient monsters.",
+        "A monster appears at the Downtown streets and the Miskatonic U. streets."
+      ],
+      "clue": "Black Cave",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Contagion Kills Life in Blasted Heath!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Blasted Heath streets or locations are returned to the cup.",
+        "All flying monsters move."
+      ],
+      "clue": ["Black Cave", "Library"],
+      "gate": "The Witch House",
+      "gateType": "burst",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Cops Sweep Kingsport!",
+      "type": "headline",
+      "text": [
+        "All monsters in Kingsport street areas or locations are returned to the monster cup.",
+        "All flying monsters move."
+      ],
+      "clue": ["Police Station", "Central Hill"],
+      "gate": "Black Cave",
+      "gateType": "burst",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Corpse Garden",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the Central Hill streets gain 2 Clue tokens, then lose 1 Sanity and 1 Stamina.",
+        "All flying monsters move."
+      ],
+      "clue": ["7th House on the Left", "Graveyard"],
+      "gate": "Unvisited Isle",
+      "gateType": "burst",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Corpses Preserved",
+      "type": "headline",
+      "text": [
+        "Monster trophies come to life! Each investigator in Arkham must randomly choose one of his collected monster trophies. That monster surprises him. If the investigator defeats the monster, he may draw cards from the Exhibit Item deck equal to its toughness, take one, and discard the rest. Only monsters that are defeated may be taken as trophies again; if the investigator flees or the monster defeats him, the monster is returned to the box."
+      ],
+      "clue": "Independence Square",
+      "gate": "Hibbs Roadhouse",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Cosmic Upheaval!",
+      "type": "headline",
+      "text": [
+        "Investigators that are currently in Other Worlds must immediately pass a Luck (-1) check or be lost in time and space."
+      ],
+      "clue": "Devil Reef",
+      "gate": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Couriers in Town!",
+      "type": "headline",
+      "text": [
+        "Until the end of next turn, investigators may trade Items with one another without being in the same space. Leave this card in place to signify this. Items may only be traded in this manner during Upkeep."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Cover-up",
+      "type": "rumor",
+      "text": [
+        "When this card enters play, place 3 Clue tokens per player on it. Any player may discard monster trophies while in the Downtown streets during the Arkham Encounters Phase to remove 1 Clue token from this card for each toughness worth of monsters discarded.",
+        "**Outgoing Effect**: Place 1 Clue token per player on this card at the end of every Mythos Phase (beginning the turn after it entered play).",
+        "**Pass**: If there are no Clue tokens on this card, return it to the box. Each investigator is Blessed, and gains a Retainer.",
+        "**Fail**: If there are 6 Clue tokens per player on this card, return it to the box. All investigators lose all of their Clue tokens, and all Clue tokens are removed from the board."
+      ],
+      "activity": "Downtown streets",
+      "doom_add": 2,
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent", "diamond", "hexagon", "square"], 
+        "black": ["circle", "cross", "slash", "triangle", "star"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Curfew Enforced",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Any investigator who ends his movement in the streets must pass a **Will (+0) check** or be arrested and taken to the Police Station."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Cursed Relics",
+      "type": "rumor",
+      "text": [
+        "Place 5 doom tokens on this card when it comes into play.",
+        "Ongoing Effect: At the end of every Mythos Phase after the first, move 1 doom token from this card to the terror track and increase the terror level by 1. Any player may exhaust a ready Exhibit Item or discard a Unique Item to negate both effects.",
+        "Pass: If there are no doom tokens on the terror track after the last doom token is removed from this card, discard this card. Each player draws 1 Spell.",
+        "Fail: If there are doom tokens on the terror track after the last doom token is removed from this card, discard this card and all doom tokens from the terror track. The terror level rises by a number equal to the number of doom tokens discarded."
+      ],
+      "clue": "",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Dark Conjunction",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "While this card is in play, all monsters gain Overwhelming 1. Any monster that already has Overwhelming has its Overwhelming rating increased by 1."
+      ],
+      "clue": "Devil Reef",
+      "gate": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Dark Day!",
+      "type": "headline",
+      "text": [
+        "Investigators cannot spend Clue tokens to add to skill checks until the end of next turn. Leave this card in play until then as a reminder."
+      ],
+      "clue": ["Esoteric Order of Dagon", "Velmas Diner"],
+      "gate": "Devil Reef",
+      "gateType": "burst",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Dark Shapes at Dusk!",
+      "type": "headline",
+      "text": [
+        "All Ghasts, Leng Spiders, and Moon-beasts are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1."
+      ],
+      "clue": ["Woods", "607 Water St"],
+      "gate": "The Unnamable",
+      "gateType": "burst",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Dark Skies",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Fight checks in Arkham are made at a -1 penalty.",
+        "Sneak checks in Arkham are made at a +1 bonus.",
+        "Stalkers move like normal monsters."
+      ],
+      "activity": "Northside Streets",
+      "clue": "Devils Hopyard",
+      "gate": "Whateley Farm",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Deathly Still",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Will checks in Arkham are made at a -1 penalty.",
+        "Fight checks in Arkham are made at a +1 bonus.",
+        "Monsters that move normally are stalkers."
+      ],
+      "activity": "Northside Streets",
+      "clue": "Cold Spring Glen",
+      "gate": "Gardners Place",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Dire Portents Abound",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Investigators receive -1 to checks to close Gates."
+      ],
+      "activity": "Northside Streets",
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Darkes Carnival Arrives",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the Northside streets gain 1 Clue token from the sinister wonders they witness, but must pass a **Will (-1) check** or lose 1 Sanity."
+      ],
+      "activity": "Northside Streets",
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Disturbin the Dead",
+      "type": "rumor",
+      "text": [
+        "**Outgoing Effect**: Roll a die at the end of every **Mythos Phase** while this card is in play (beginning the turn after it entered play). On a 1 or 2, increase the terror level by 1.",
+        "**Pass**: If a single player discards 2 gate trophies during the **Arkham Encounter Phase** while in the Rivertown streets, return this card to the box. Each player draws 1 Spell.",
+        "**Fail**: If the terror level reaches 10, return this card to the box. Every investigator is *Cursed*."
+      ],
+      "activity": "Rivertown Streets",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Double the Trouble",
+      "type": "headline",
+      "text": [
+        "Two Gates open this turn, but no doom tokens are added to the doom track."
+      ],
+      "clue": ["Black Cave", "Science Building"],
+      "gate": ["Unvisited Isle", "The Witch House"],
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent", "diamond", "hexagon", "square"], 
+        "black": ["circle", "cross", "slash", "triangle", "star"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Dreams of a Sunken City",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Investigators cannot gain Sanity except by recieving psychiatric care in Arkham Asylum or from Carolyn Fern."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Dunwich Villagers Drive Out Undesirables!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Village Commons streets or locations are returned to the cup."
+      ],
+      "clue": ["The Unnamable", "Train Station"],
+      "gate": "Independence Square",
+      "gateType": "burst",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Early Frost",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "As they slip and fall on the ice, each investigator loses 1 Stamina for each movement point over 3 he spends each turn. Reading Tomes does not count towards this total."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Eccentric Opens Doors",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the French Hill streets may discard 1 Gate trophy to draw 1 Unique Item."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Eerie Coincidences",
+      "type": "headline",
+      "text": [
+        "Two Gates open this turn, but no doom tokens are added to the doom track."
+      ],
+      "clue": ["The Unnamable","Black Cave"],
+      "gate": ["Independence Square","The Witch House"],
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle", "cross", "slash", "triangle", "star"],
+        "black": ["crescent", "diamond", "hexagon", "square"]
+      },
+      "expansion": "LTH"
+    },
+    {
+      "name": "Egyptian Exhibit Visits Miskatonic U.",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Any investigator who ends his movement in the Miskatonic U. streets may pass a **Lore (-1) check** to gain 1 Clue token by reading the strange heiroglyphics on the artifacts in the exhibit."
+      ],
+      "activity": "Miskatonic U. Streets",
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Endlessly Breeding",
+      "type": "rumor",
+      "text": [
+        "Ongoing Effect: At the end of each Mythos phase, draw a second Mythos card and ignore everything on it except for its monster movement pattern. Each time an investigator is reduced to 0 Stamina or 0 Sanity, place a Clue token on this card.",
+        "Pass: If a single investigator discards $10 while at the Riverside Docks, return this card to the box. Starting with the first player, each player chooses a monster in play and takes it as a monster trophy (ignoring Endless).",
+        "Fail: If there are ever 3 Clue tokens on this card, return it to the box. A monster surge occurs, then add a doom token to the doom track for each Hex monster in play."
+      ],
+      "activity": "Riverside Docks",
+      "clue": "",
+      "gate": "",
+      "doom_add": 2,
+      "gateType": "normal",
+      "special": "extra_mythos_movement",
+      "movement": {
+        "white": ["crescent", "diamond", "hexagon", "square"], 
+        "black": ["circle", "cross", "slash", "triangle", "star"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Escape from Arkham Asylum!",
+      "type": "headline",
+      "text": [
+        "The inmates at the Asylum all begin chanting in an ancient language, and overpower the orderlies! *Nephren-Ka! Nephren-Ka!* The streets flood with the insane.",
+        "Collect up to 3 Maniacs, drawing them first from the monster cup, then from the Outskirts, then from those claimed as trophies. Place them all in the Downtown streets.",
+        "Investigators who defeat all 3 Maniacs before the end of next turn may draw 1 Exhibit Item. Leave this card in play until then to indicate this."
+      ],
+      "clue": "Independence Square",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"], 
+        "black": ["cross"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Estate Sale",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the Uptown streets may draw 2 Unique Items and purchase one, none, or both of them at list price, discarding any that are not purchased."
+      ],
+      "activity": "Uptown Streets",
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Evidence Destroyed!",
+      "type": "headline",
+      "text": [
+        "A massive conspiracy sets back the investigation. Discard all Clue tokens from the board.",
+        "No clue appears and no monsters move."
+      ],
+      "clue": "",
+      "gate": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": [], 
+        "black": []
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Family Found Butchered!",
+      "type": "headline",
+      "text": ["The terror level increased by 1 in light of this tragic news."],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Feds Raid Arkham!",
+      "type": "headline",
+      "text": ["All monsters in the streets are returned to the cup."],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Fire at the Mill!",
+      "type": "headline",
+      "text": [
+        "Until the end of the next turn, any time an investigator draws 1 or more Common Items for any reason, he draws 1 fewer cards (to a minimum of 0). Leave this card in play to indicate this."
+      ],
+      "gate_alt": "The Witch House",
+      "gate": "Gardners Place",
+      "clue_alt": ["Black Cave", "Congregational Hospital"],
+      "clue": ["Cold Spring Glen", "Congregational Hospital"],
+      "gateType": "burst",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Fires in the Night",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Monsters at the Woods do not move.",
+        "Monsters in the Uptown streets who move move to the woods."
+      ],
+      "gate": "Independence Square",
+      "clue": ["Hibbs Roadhouse", "Silver Twilight Lodge"],
+      "gateType": "burst",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Footprints on Shore!",
+      "type": "headline",
+      "text": [
+        "It seems that 2 monsters have come ashore in the Innsmouth Shore streets."
+      ],
+      "gate": "Devil Reef",
+      "clue": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Forgery!",
+      "type": "headline",
+      "text": [
+        "Until the end of next turn, any time an investigator draws 1 or more Unique Items for any reason, he draws 1 fewer cards (to a minimum of 0). Leave this card in play to indicate this."
+      ],
+      "gate": "Wizard's Hill", 
+      "gate_alt": "Woods",
+      "clue": ["607 Water St", "Gardners Place"],
+      "clue_alt": ["607 Water St", "Historical Society"],
+      "gateType": "burst",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Formal Dress Gala Announced!",
+      "type": "headline",
+      "text": [
+        "Each investigator may choose to immediately spend $5 to gain 2 Sanity and 2 Clue tokens."
+      ],
+      "gate": "Devil Reef", 
+      "gate_alt": "Woods",
+      "clue": "Esoteric Order of Dagon",
+      "clue_alt": "Historical Society",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Fourth of July Parade!",
+      "type": "headline",
+      "text": [
+        "Investigators cannot move into our out of the Merchant Dist. streets until the end of the next turn. Leave this card in play until then to indicate this."
+      ],
+      "close": "Merchant Dist Streets",
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Free Clinic!",
+      "type": "headline",
+      "text": [
+        "The investigator with the lowest Stamina (the first player breaks ties) may move to St. Mary's Hospital and be delayed to restore his Stamina to its maximum."
+      ],
+      "gate": "Devil Reef", 
+      "clue": ["Esoteric Order of Dagon", "Library"],
+      "gateType": "burst",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Full Moon",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "All monsters have their Sanity damage increased by 1."
+      ],
+      "gate": "Graveyard", 
+      "clue": ["Independence Square", "Woods"],
+      "gateType": "burst",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Fund Drive for the Arts",
+      "type": "headline",
+      "text": [
+        "The performance of the controversial *The King in Yellow* have increased local enthusiasm for the arts, and the Historical Society is taking advantage of it with a fundraising auction.",
+        "Investigators in Arkham may immediately spend up to $1 for every Ally left in the Ally deck. For every $2 an investigator spends, he may draw one card from the Unique Item deck. He then takes one card from among those he has drawn and shuffles the rest back into the deck."
+      ],
+      "gate": "The Unnamable", 
+      "clue": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "KIY"
+    },
+    {
+      "name": "Funnel Clouds",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Any investigator who ends his movement in the streets must pass a Luck (+1) check or be devoured.",
+        "All flying monsters are returned to the monster cup."
+      ],
+      "gate": "Historical Society", 
+      "clue": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Gangs Clean Up Easttown!",
+      "type": "headline",
+      "text": [
+        "All the monsters in the Easttown streets or locations are returned to the cup."
+      ],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Gathering Storm!",
+      "type": "headline",
+      "text": [
+        "The situation in Innsmouth continues to worsen. Add one uprising token to the Deep Ones Rising track."
+      ],
+      "gate": "Devil Reef",
+      "clue": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Ghost Ship Docks by Itself!",
+      "type": "headline",
+      "text": [
+        "An ancient ghost ship arrives in Arkham, releasing 2 monsters into the Merchant Dist. streets."
+      ],
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Goat-like Creature Spotted in Woods!",
+      "type": "headline",
+      "text": [
+        "All Dark Young in Arkham are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Good Traveling Conditions",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Fight checks in Arkham are made at a -1 penalty.",
+        "Speed checks in Arkham are made at a +1 bonus, and investigators receive 1 extra movement point.",
+        "Monsters that move normally are fast."
+      ],
+      "gate": "Gardners Place",
+      "clue": "Cold Spring Glen",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Good Work Undone",
+      "type": "rumor",
+      "text": [
+        "When this card enters play, place 6 Clue tokens on it. Any player may spend Clue tokens during the **Arkham Encounter Phase** while in the Easttown streets to discard Clue tokens from this card on a 1-for-1 basis.",
+        "Ongoing Effect: Roll two dice at the end of every Mythos Phase (beginning the turn after it entered play). For every 1 or 2 rolled, place one Clue token on this card.",
+        "Pass: If there are no Clue tokens on this card, return it to the box. Each player draws one unique item.",
+        "Fail: If there are 10 Clue tokens on this card, return it to the box. All elder sign tokens are removed from the board."
+      ],
+      "activity": "Easttown Streets",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Gossip Runs Wild!",
+      "type": "headline",
+      "text": [
+        "If the Dunwich Horror is in play, increase the terror level by 2.",
+        "Investigators can trade Clue tokens like other Items until the end of next turn. Leave this card in play until then to show this."
+      ],
+      "gate": "Wizards Hill",
+      "clue": "Gardners Place",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Graverobbers Strike!",
+      "type": "headline",
+      "text": [
+        "Unfortunately for them, they release 2 monsters into the Central Hill streets."
+      ],
+      "gate": "Historical Society",
+      "clue": "Congregational Hospital",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Gypsy Caravan",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Investigators who end their movement in the Southside Streets may roll a die. On a success, they gain $2. On a failure, they lose $1."
+      ],
+      "clue": "Black Cave",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Hallelujah!",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "The first investigator who ends his movement in South Church is Blessed, then discards this card from play."
+      ],
+      "clue": "Library",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Happy Days are Here Again",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Due to the renewed prosperity that has come to Arkham, the terror level cannot increase."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Heat Wave",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Fight checks in Arkham are made at a -1 penalty",
+        "Lore checks in Arkham are made at a +1 bonus.",
+        "Fire Vampires have their tougness increased by 1."
+      ],
+      "clue": "Independence Square",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Hellene Sighted!",
+      "type": "headline",
+      "text": [
+        "The ancient ship briefly docks, releasing 2 monsters into the Harborside streets."
+      ],
+      "clue": "St Erasmuss Home",
+      "gate": "Hibbs Roadhouse",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Help Wanted",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "The first investigator without a Retainer who ends his movement at the Newspaper gains a Retainer, then discards this card from play."
+      ],
+      "clue": ["Gardners Place","Darkes Carnival"],
+      "gate": "Wizards Hill",
+      "gateType": "burst",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "High Tides",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "The tides seem to be defying the tidal charts, causing elevated water levels far upriver.",
+        "Investigators in Rivertown, Easttown, and Merchant District streets or locations must pass a Fight (-1) Check or be delayed."
+      ],
+      "clue": "Independence Square",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "KIY"
+    },
+    {
+      "name": "Horns of the Black Goat",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Dark Young have their toughness increased by 1."
+      ],
+      "clue": ["The Unnamable", "Independence Square"],
+      "gate": "Unvisited Isle",
+      "gateType": "burst",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Horrifying Sight!",
+      "type": "headline",
+      "text": [
+        "The first player must choose one investigator (even himself). That investigator loses 3 Sanity."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Horror at Groundbreaking!",
+      "type": "headline",
+      "text": [
+        "An ancient stone is disturbed by the construction, releaseing 2 monsters into the Miskatonic U. streets."
+      ],
+      "clue": "Silver Twilight Lodge",
+      "gate": "Historical Society",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Hospital Patients Disappear!",
+      "type": "headline",
+      "text": [
+        "All investigators who have an Injury card (from the Dunwich Horror expansion) or whose Stamina is currently 2 or less move immediately to the first area of Another Dimension."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gate_alt":"The Witch House",
+      "clue_alt":"Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Icy Conditions",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Investigators recive 1 less movement point during the Movement Phase."
+      ],
+      "clue": "Silver Twilight Lodge",
+      "gate": "Historical Society",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Ill Wind Grips Arkham!",
+      "type": "headline",
+      "text": [
+        "The first player must pass a **Luck (-1) check** or be *Cursed*."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Impassable Streets",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "An investigator may not move to a street area if there is a black movement arrow leading to it from his present street area. This does not effect moving from a location to a street area or from a street area to a location."
+      ],
+      "gate": "Esoteric Order of Dagon",
+      "gate_alt":"Unvisited Isle",
+      "clue": "Devil Reef",
+      "clue_alt": "Science Building",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Infestation of Rats",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Each investigator in Ma's Boarding House or Velma's Diner at the end of the Mythos Phase, as well as each investigator in First National Grocery, Gilman House Hotel, or Innsmouth Jail on the Innsmouth Horror expansion game board at the end of the Mythos Phase, loses 1 Sanity."
+      ],
+      "gate": "Gardners Place",
+      "gate_alt":"The Unnamable",
+      "clue": "Cold Spring Glen",
+      "clue_alt": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "MKH"
+    },
+    {
+      "name": "Innsmouth Invasion!",
+      "type": "headline",
+      "text": [
+        "The city of Innsmouth is suddenly crawling with monsters. A monster appears in the Church Green streets, the Innsmouth Shore streets, the Factory District streets, Sawbone Alley, and Devil Reef."
+      ],
+      "gate": "Esoteric Order of Dagon",
+      "clue": "Devil Reef",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Innsmouth is Restless",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "While this card is in play, investigators who end their movement in Innsmouth receive a -1 penalty to their Evade check to avoid being arrested once martial law is declared in Innsmouth."
+      ],
+      "gate": "Devil Reef",
+      "clue": "Esoteric Order of Dagon",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Innsmouth Sleeps",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "While this card is in play, investigators who end their movement in Innsmouth do not need to make the usual Evade check to avoid being arrested once martial law is declared in Innsmouth."
+      ],
+      "gate": "Marsh Refinery",
+      "clue": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Intermission",
+      "type": "headline",
+      "text": [
+        "The town of Arkham collectively holds its breath as the terrible play *The King in Yellow* builds to a crescendo, preparing to reveal its darkest horrors. But for the moment, nothing happens. No gates open, but the terror level is increased by 2."
+      ],
+      "terror_add": 2,
+      "gateType": "normal",
+      "movement": {
+        "white": [],
+        "black": []
+      },
+      "expansion": "KIY"
+    },
+    {
+      "name": "Jail Break!",
+      "type": "headline",
+      "text": [
+        "However, it appears that whatever was being held in the jail wasn't quite human, so 2 monsters are released into the Church Green streets."
+      ],
+      "gate": "Marsh Refinery",
+      "clue": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Jail Break!",
+      "type": "headline",
+      "text": [
+        "However, it appears that whatever was being held in the jail wasn't quite human, so 2 monsters are released into the Church Green streets."
+      ],
+      "gate": "Marsh Refinery",
+      "clue": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "King of Cards Cancels Show",
+      "type": "headline",
+      "text": [
+        "Erich Weiss, a famous visiting escape artist and master of illusion, was scheduled to put on a show. However, when he was told that the *Legacy of the Pharaohs* museum exhibit was in town, he paled visibly and canceled the performance. *There is a thing I must do* was his only comment.",
+        "All Witches and Warlocks in Arkham are returned to the cup. If any investigator has Eric Weiss as an Ally, that investigator gains those monsters as trophies."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "CDP"
+    },
+    {
+      "name": "Kingsport Mists",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Sneak checks in Arkham are made at a +1 bonus.",
+        "The Causeway, the Wireless Station, and the Strange High House in the Mists are closed while this card remains in play."
+      ],
+      "clue": ["The Unnamable", "The Rope and Anchor"],
+      "gate": "Independence Square",
+      "gateType": "burst",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Lightning Storm",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "At the start of each Upkeep Phase while this card is in play, roll a die. On a 1 or 2, the first player must choose an investigator in a street area (if there are any). That investigator loses a die of Stamina and moves to St. Mary's Hospital."
+      ],
+      "gate": "Marsh Refinery",
+      "clue": "Yha nthlei",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "INH"
+    },
+    {
+      "name": "Lightning Strikes Twice!",
+      "type": "headline",
+      "text": [
+        "Two similar rocks are shattered by lightning strikes in different parts of Arkham, each releasing a monster. A monster appears at the French Hill streets and the Uptown streets."
+      ],
+      "gate": "Unvisited Isle",
+      "clue": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "BGW"
+    },
+    {
+      "name": "Local Heiress Missing!",
+      "type": "headline",
+      "text": [
+        "If any player has Asenath Waite as an Ally, she is returned to the box and a doom token is added to the Ancient One's doom track."
+      ],
+      "clue": ["Unvisited Isle", "Hall School"],
+      "gate": "Graveyard",
+      "gateType": "burst",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "KH"
+    },
+    {
+      "name": "Lodge Members Watch the Night!",
+      "type": "headline",
+      "text": [
+        "All monsters in the French Hill streets or locations are returned to the cup."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Lynch Mob!",
+      "type": "headline",
+      "text": [
+        "One Ally is randomly drawn from the Ally deck and returned to the box."
+      ],
+      "clue": "Gardners Place",
+      "gate": "Wizards Hill",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Mad Bomber",
+      "type": "rumor",
+      "text": [
+        "Mythos Ability: When this card enters play, place $4 per player on it. Any player may pay money while in the Merchant District streets during the Arkham Encounters Phase to remove money from this card on a 1-for-1 basis.",
+        "Ongoing Effect: Place $1 per player on this card at the end of every Mythos Phase (beginning the turn after it entered play).",
+        "Pass: If there is no money on this card, return it to the box. Each player gains 2 Clue tokens.",
+        "Fail: If there is $8 per player on this card, return it to the box. Every Investigator must immediately draw 1 Injury and 1 Madness card."
+      ],
+      "gate": "Gardners Place",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "DUH"
+    },
+    {
+      "name": "Manhunt in Arkham!",
+      "type": "headline",
+      "text": ["All monsters in location are returned to the cup."],
+      "clue": "Independence Square",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Merchants March on Crime!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Merchant Dist. streets or locations are returned to the cup."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Miskatonic Arctic Expedition Returns!",
+      "type": "headline",
+      "text": [
+        "Any Elder Things previously claimed as monster trophies by players return to life and are placed in the River Docks."
+      ],
+      "clue": "Independence Square",
+      "gate": "Hibbs Roadhouse",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Missing People Return!",
+      "type": "headline",
+      "text": [
+        "All investigators currently *lost in time and space* immediately return to Arkham, appearing in a street or location of their choice."
+      ],
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "No Once Can Help You Now",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Gate cannot be **sealed**, although they can still be **closed**."
+      ],
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Noden's Favor",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": ["It costs 2 fewer Clue tokens to **seal** gates."],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Picnickers Panic!",
+      "type": "headline",
+      "text": [
+        "A careless picnicker unleashes 2 monsters on the Downtown streets."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Planetary Alignment",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Thanks to the mystic energy generated by the planetary alignment, all spells have a Sanity cost of 0."
+      ],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Police Step Up Patrols in Northside!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Northside streets or locations are returned to the cup."
+      ],
+      "clue": "Graveyard",
+      "gate": "Silver Twilight Lodge",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Private Security Hired in Updtown!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Uptown streets or locations are returned to the cup."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Raining Cats and Dogs",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Speed check in Arkham are made at a -1 penalty, and player receive 1 less movement point during the **Movement Phase**.",
+        "Sneak checks in Arkham are made at a +1 bonus",
+        "Return any Fire Vamipires in play to the cup. If a fire Vamipire enters play, return it to the cup and draw a different monster."
+      ],
+      "clue": "Independence Square",
+      "gate": "Hibbs Roadhouse",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Rivertown Residents Take Back Streets!",
+      "type": "headline",
+      "text": [
+        "All monsters in Rivertown streets or locations are returned to the cup."
+      ],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "R'yleh Rising",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Star Spanw and Maniacs have their toughness increased by 1.",
+        "The difficulty to **seal** or **close** gates to R'yleh is increased by 1."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Scientist Warns of Dimension Rift!",
+      "type": "headline",
+      "text": [
+        "All Dimensional Shamblers and Hounds of Tindalos in Arkham are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1."
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Sheldon Gang Turns to Police for Aid!",
+      "type": "headline",
+      "text": [
+        "The Sheldon Gang disturbs a burial mound, releasing 2 monsters in to the Updtown streets."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Slum Murders Continue!",
+      "type": "headline",
+      "text": [
+        "An old basement is opened. releasing 2 monsters into the Easttown streets."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Solar Eclipse",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Due to the interference of the solar eclipse, no spells may be cast."
+      ],
+      "clue": "Unvisited Isle",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Southside Strangler Suspected",
+      "type": "headline",
+      "text": [
+        "However, the press is mistaken, and the murders were caused by 2 monsters that are released into the Southside streets."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Strange Lights on Campus!",
+      "type": "headline",
+      "text": [
+        "The Library, Administration Building, and Science Building are all closed until the end of the next turn. Leave this card in play until then to indicate this."
+      ],
+      "close": ["Administration Building", "Library", "Science Building"],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Strange Power Flux Plagues City!",
+      "type": "headline",
+      "text": [
+        "All investigators in Other World aras may immediately return to Arkham."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Strange Tremors Cease!",
+      "type": "headline",
+      "text": [
+        "All the Chthonians and Dholes in Arkham are returned to the cup. If at least one monster returns to the cup, raise the terror level by 1."
+      ],
+      "clue": "The Unnamable",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Sunny and Clear",
+      "type": "environment",
+      "subtype": "weather",
+      "text": [
+        "Sneak checks in Arkham are made at a -1 penalty.",
+        "Will checks in Arkham are made at a +1 bonus.",
+        "If the Haunter in Darkness is in play, return it to the cup. If the Haunter in Darkness enters play, return it to the cup and draw a difference monster."
+      ],
+      "clue": "Hibbs Roadhouse",
+      "gate": "Black Cave",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Temperence Fever Sweeps City",
+      "type": "headline",
+      "text": [
+        "Any investigator with Whiskey must pass a **Sneak (-1) check** or get arrested and take to the Police Station. If this occurs the must discard their Whiskey. In addition, Hibbs Roadhouse is closed until the end of the next turn. Leave this card in play until then to indicate this."
+      ],
+      "close": ["Hibbs Roadhouse"],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["hexagon"],
+        "black": ["slash", "triangle", "star"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Terror at the Train Station!",
+      "type": "headline",
+      "text": [
+        "A rusty train arrives in Arkham, disgorgin 2 monsters in the Northside streets"
+      ],
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Chill of the Grave",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [ "All **Undead** monsters have their toughness increased by 1."],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Festival",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "The festival has begun! Cultists and Byahkee have their toughness increased by 1."
+      ],
+      "clue": "Historical Society",
+      "gate": "Woods",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Great Ritual",
+      "type": "rumor",
+      "text": [
+        "**Ongoing Effect**: Cultists, Witches, Warlocks, and High Priests have their toughness increased by 2 while this card is in play.",
+        "Place 1 Clue token on this card at the end of every **Mythos Phase** (beginning the turn after it entered play).",
+        "**Pass**: If a single player discards 3 spells (4 if there are 5 or more players) while in the French HIll streets during the **Arkham Encounters Phase**, return this card to the box. Each player gains 2 Clue tokens.",
+        "**Fail**: If there are ever 5 or more Clue tokens on this card, return it to the box. From now on, draw 2 mythos cards each **Mythos Phase**. Ignore everything on the first card except for gate opening."
+      ],
+      "activity": "French Hill Streets",
+      "gate": "Graveyard",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Man in Black",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Investigators who end their movment in the French Hill streets may deal with the Man in Black to gain power. They roll dice equal to their current Sanity, and for every failed die, the lose 1 Sanity. If this reduces them to 0 Sanity, they are **devoured** and the player must start a new character. Otherwise, they gain 1 Clue token and draw 1 Spell"
+      ],
+      "activity": "French Hill Streets",
+      "clue": "Black Cave",
+      "gate": "The Witch House",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Southside Strangler Strikes",
+      "type": "rumor",
+      "text": [
+        "**Ongoing Effect**: Return one Ally from the Ally deck to the box box at random at the end of every **Mythos Phase** while this card is in play (beginning the turn after it entered play). The Southside Strangler has struck again!",
+        "**Pass**: If a single player discards 5 Clue tokens while in Ma's Boarding House during the **Arkham Encounter Phase**, return this card to the box. Each player gains $5 as a reward from the police.",
+        "**Fail**: If there are no Allies to return to the box at the end of the **Mythos Phase**, return this card to the box. Each player must lower either their maximum Sanity or Stamina (their choice) by 1 for the rest of the game."
+      ],
+      "activity": "Southside Streets",
+      "gate": "Independence Square",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Stars Are Right",
+      "type": "rumor",
+      "text": [
+        "**Ongoing Effect**: Roll a die at the end of every **Mythos Phase** while this card is in play (beginning the turn after it entered play). On a 1 or 2, place one doom token on the ancient one's doom tack.",
+        "**Pass**: If a player discards an Ally card while in the Downtown streets during the **Arkham Encounters Phase**, return this card to the box. Each player draws 2 Common Items.",
+        "**Fail**: If the Ancient One awakens, return this card to the box."
+      ],
+      "activity": "Downtown Streets",
+      "gate": "Science Building",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "The Terrible Experiment",
+      "type": "rumor",
+      "text": [
+        "When this card enter play, place 5 monsters form the cup on it. Any player may choose to fight one or more of these monsters while in the Miskatonic U. streets during the **Arkham Encounter Phase**. If defeated, they are claimed as trophies. These monsters do not move, are not considered to be on the board, and do not count against the monster limit.",
+        "**Ongoing Effect**: Place a monster on this card at the end of every **Mythos Phase** (beginning the turn after it entered play.",
+        "**Pass**: If there are no monsters on this card, return it to the box. Each player draws 1 skill.",
+        "**Fail**: If there are 8 monsters on this card return it to the box. Raise the terror level to 10 and place the monsters that were on it into play in the Miskatonic U. streeets."
+      ],
+      "activity": "Miskatonic U. Streets",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["slash", "triangle", "star"],
+        "black": ["hexagon"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Things of Darkness",
+      "type": "environment",
+      "subtype": "mystic",
+      "text": [
+        "Ghouls, Formless Spawns, Shaggoths, and Flying Polyps have their toughtness increased by 1."
+      ],
+      "clue": "Graveyard",
+      "gate": "Silver Twilight Lodge",
+      "gateType": "normal",
+      "movement": {
+        "white": ["square", "diamond"],
+        "black": ["circle"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Vigilante Guard the Night!",
+      "type": "headline",
+      "text": [
+        "All monsters in the Downtown streets or locations are returned to the cup."
+      ],
+      "clue": "Woods",
+      "gate": "The Unnamable",
+      "gateType": "normal",
+      "movement": {
+        "white": ["circle"],
+        "black": ["square", "diamond"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Witch Burning Anniversary!",
+      "type": "headline",
+      "text": [
+        "An ancient curse strikes Arkham, releasing 2 monsters in to the Rivertown streets"
+      ],
+      "clue": "Science Building",
+      "gate": "Unvisited Isle",
+      "gateType": "normal",
+      "movement": {
+        "white": ["crescent"],
+        "black": ["cross"]
+      },
+      "expansion": "AKH"
+    },
+    {
+      "name": "Songs from the Woods",
+      "type": "environment",
+      "subtype": "urban",
+      "text": [
+        "Goat Span, Tcho-tchos, and Dark Young have their toughness increased by 1."
+      ],
+      "clue": "C",
+      "gate": "",
+      "gateType": "normal",
+      "movement": {
+        "white": ["cross"],
+        "black": ["crescent"]
+      },
+      "expansion": "DWH"
+    }
+  ]
+}

@@ -24,17 +24,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      h: [ '"Crimson Pro"', 'Times', 'serif' ],
-      t: [ '"Poppins"', 'Helvetica', 'Arial', 'sans-serif' ],
+      h: [ '"IM Fell DW Pica"', 'Times', 'serif', 'huiwenMing' ],
+      t: [ '"PT Sans"', 'Helvetica', 'Arial', 'sans-serif', 'huiwenMing' ],
+      c: [ '"loveLetter"', 'Times', 'serif', 'huiwenMing' ],
+      ca: [ '"courierPolski"', 'Times', 'serif', 'huiwenMing' ],
     },
     screens: {
-      xs: '480px',
-      sm: '768px',
-      md: '992px',
-      lgcontent: '1200px',
-      lg: '1280px',
-      xlcontent: '1400px',
-      xl: '1566px',
+      tablet: '814px',
     },
     inset: {
       '0': 0,
@@ -120,11 +116,24 @@ module.exports = {
       letterSpacing: {
         tight: '-0.5px',
       },
+      flex: {
+        '1/3': '1 1 32%',
+        '1/2': '1 1 46%',
+      },
       minHeight: {
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
+      },
+      maxHeight: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
+      maxWidth: {
+        '1/2': '50%',
       },
       height: {
         hero: '80vh',

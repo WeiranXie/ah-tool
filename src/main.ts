@@ -14,9 +14,20 @@ import mixin from './mixin'
 import { webp } from './plugins/webp'
 
 // External plugins
-import i18n from './i18n'
+import { createI18n } from 'vue-i18n'
 
 // Components & Widgets
+import Setup from '@/components/setup.vue'
+import translations from '@/jsons/translation.json'
+
+
+/* ========================================================================== *
+* i18n Begins                                                                 *
+* -------------------------------------------------------------------------- */
+const i18n = createI18n({
+  locale: 'zh',
+  messages: translations,
+})
 
 
 /* ========================================================================== *
@@ -27,6 +38,7 @@ const app = createApp(App)
     .use(i18n)
     .use(mixin)
     .use(webp)
+    .component('setup', Setup)
 
 router.isReady()
     .then(() => {

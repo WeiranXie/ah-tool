@@ -1,0 +1,388 @@
+{
+  "investigators": [
+    {
+      "name": "Agnes Baker",
+      "subline": "Waitress",
+      "starting_at": "Velma's Diner",
+      "stats": [5, 5, 2],
+      "exp": "INH",
+      "image": "1.jpg"
+    },
+    {
+      "name": "Akachi Onyele",
+      "subline": "Shaman",
+      "starting_at": "Ye Olde Magick Shoppe",
+      "stats": [7, 3, 1],
+      "exp": "INH",
+      "image": "48.jpg"
+    },
+    {
+      "name": "Amanda Sharpe",
+      "subline": "Student",
+      "starting_at": "Bank of Arkham",
+      "stats": [5, 5, 3],
+      "exp": "AKH",
+      "image": "2.jpg"
+    },
+    {
+      "name": "&#34;Ashcan&#34; Pete",
+      "subline": "Drifter",
+      "starting_at": "River Docks",
+      "stats": [4, 6, 1],
+      "exp": "AKH",
+      "image": "3.jpg"
+    },
+    {
+      "name": "Bob Jenkins",
+      "subline": "Salesman",
+      "starting_at": "General Store",
+      "stats": [4, 6, 1],
+      "exp": "AKH",
+      "image": "4.jpg"
+    },
+    {
+      "name": "Carolyn Fern",
+      "subline": "Psychologist",
+      "starting_at": "Arkham Asylum",
+      "stats": [6, 4, 2],
+      "exp": "AKH",
+      "image": "5.jpg"
+    },
+    {
+      "name": "Charlie Kane",
+      "subline": "Politician",
+      "starting_at": "Administration Building",
+      "stats": [4, 6, 2],
+      "exp": "KH",
+      "image": "6.jpg"
+    },
+    {
+      "name": "Daisy Walker",
+      "subline": "Librarian",
+      "starting_at": "Library",
+      "stats": [5, 5, 2],
+      "exp": "KH",
+      "image": "7.jpg"
+    },
+    {
+      "name": "Darrell Simmons",
+      "subline": "Photographer",
+      "starting_at": "Newspaper",
+      "stats": [4, 6, 2],
+      "exp": "AKH",
+      "image": "8.jpg"
+    },
+    {
+      "name": "Dexter Drake",
+      "subline": "Magician",
+      "starting_at": "Ye Olde Magick Shoppe",
+      "stats": [5, 5, 2],
+      "exp": "AKH",
+      "image": "9.jpg"
+    },
+    {
+      "name": "Diana Stanley",
+      "subline": "Redeemed",
+      "starting_at": "Cultist General Store",
+      "stats": [4, 6, 1],
+      "exp": "DUH",
+      "image": "10.jpg"
+    },
+    {
+      "name": "Finn Edwards",
+      "subline": "Bootlegger",
+      "starting_at": "Bank of Arkham",
+      "stats": [4, 6, 1],
+      "exp": "INH",
+      "image": "11.jpg"
+    },
+    {
+      "name": "George Barnaby",
+      "subline": "Lawyer",
+      "starting_at": "Library",
+      "stats": [7, 3, 2],
+      "exp": "INH",
+      "image": "12.jpg"
+    },
+    {
+      "name": "Gloria Goldberg",
+      "subline": "Author",
+      "starting_at": "Velmas Diner",
+      "stats": [6, 4, 2],
+      "exp": "AKH",
+      "image": "13.jpg"
+    },
+    {
+      "name": "Hank Samson",
+      "subline": "Farmhand",
+      "starting_at": "General Store",
+      "stats": [5, 6, 2],
+      "exp": "INH",
+      "image": "14.jpg"
+    },
+    {
+      "name": "Harvey Walters",
+      "subline": "Professor",
+      "starting_at": "Administration Building",
+      "stats": [7, 3, 2],
+      "exp": "AKH",
+      "image": "15.jpg"
+    },
+    {
+      "name": "Jacqueline Fine",
+      "subline": "Psychic",
+      "starting_at": "Curiositie Shoppe",
+      "stats": [7, 3, 2],
+      "exp": "DUH",
+      "image": "16.jpg"
+    },
+    {
+      "name": "Jenny Barnes",
+      "subline": "Dilettante",
+      "starting_at": "Train Station",
+      "stats": [6, 4, 1],
+      "exp": "AKH",
+      "image": "17.jpg"
+    },
+    {
+      "name": "Jim Culver",
+      "subline": "Musician",
+      "starting_at": "Velmas Diner",
+      "stats": [6, 4, 2],
+      "exp": "DUH",
+      "image": "18.jpg"
+    },
+    {
+      "name": "Joe Diamond",
+      "subline": "Private Eye",
+      "starting_at": "Police Station",
+      "stats": [4, 6, 3],
+      "exp": "AKH",
+      "image": "19.jpg"
+    },
+    {
+      "name": "Kate Winthrop",
+      "subline": "Scientist",
+      "starting_at": "Science Building",
+      "stats": [6, 4, 1],
+      "exp": "AKH",
+      "image": "20.jpg"
+    },
+    {
+      "name": "Leo Anderson",
+      "subline": "Expedition Leader",
+      "starting_at": "River Docks",
+      "stats": [5, 5, 2],
+      "exp": "DUH",
+      "image": "21.jpg"
+    },
+    {
+      "name": "Lily Chen",
+      "subline": "Martial Artist",
+      "starting_at": "Ye Olde Magick Shoppe",
+      "stats": [6, 5, 2],
+      "exp": "KH",
+      "image": "22.jpg"
+    },
+    {
+      "name": "Lola Hayes",
+      "subline": "Actress",
+      "starting_at": "Arkham Asylum",
+      "stats": [6, 4, 2],
+      "exp": "KH",
+      "image": "23.jpg"
+    },
+    {
+      "name": "Luke Robinson",
+      "subline": "Dreamer",
+      "starting_at": "The Dreamlands",
+      "stats": [7, 3, 1],
+      "exp": "KH",
+      "image": "24.jpg"
+    },
+    {
+      "name": "Mandy Thompson",
+      "subline": "Researcher",
+      "starting_at": "Library",
+      "stats": [5, 5, 2],
+      "exp": "AKH",
+      "image": "25.jpg"
+    },
+    {
+      "name": "Marie Lambeau",
+      "subline": "Entertainer",
+      "starting_at": "Ma's Boarding House",
+      "stats": [6, 4, 2],
+      "exp": "DUH",
+      "image": "26.jpg"
+    },
+    {
+      "name": "Mark Harrigan",
+      "subline": "Soldier",
+      "starting_at": "South Church",
+      "stats": [3, 7, 1],
+      "exp": "DUH",
+      "image": "27.jpg"
+    },
+    {
+      "name": "Michael McGlen",
+      "subline": "Gangster",
+      "starting_at": "Mas Boarding House",
+      "stats": [3, 7, 1],
+      "exp": "AKH",
+      "image": "28.jpg"
+    },
+    {
+      "name": "Minh Thi Phan",
+      "subline": "Secretary",
+      "starting_at": "St Marys Hospital",
+      "stats": [6, 4, 2],
+      "exp": "INH",
+      "image": "29.jpg"
+    },
+    {
+      "name": "Monterey Jack",
+      "subline": "Archeologist",
+      "starting_at": "Curiositie Shoppe",
+      "stats": [3, 7, 2],
+      "exp": "AKH",
+      "image": "30.jpg"
+    },
+    {
+      "name": "Norman Withers",
+      "subline": "Astronomer",
+      "starting_at": "Administration Building",
+      "stats": [6, 4, 2],
+      "exp": "INH",
+      "image": "31.jpg"
+    },
+    {
+      "name": "Patrice Hathaway",
+      "subline": "Violinist",
+      "starting_at": "Curiositie Shoppe",
+      "stats": [5, 5, 2],
+      "exp": "INH",
+      "image": "32.jpg"
+    },
+    {
+      "name": "Rex Murphy",
+      "subline": "Reporter",
+      "starting_at": "Newspaper",
+      "stats": [5, 5, 2],
+      "exp": "KH",
+      "image": "33.jpg"
+    },
+    {
+      "name": "Rita Young",
+      "subline": "Athlete",
+      "starting_at": "Police Station",
+      "stats": [4, 6, 2],
+      "exp": "DUH",
+      "image": "34.jpg"
+    },
+    {
+      "name": "Roland Banks",
+      "subline": "Fed",
+      "starting_at": "Arkham Asylum",
+      "stats": [4, 6, 3],
+      "exp": "INH",
+      "image": "35.jpg"
+    },
+    {
+      "name": "Silas Marsh",
+      "subline": "Sailor",
+      "starting_at": "River Docks",
+      "stats": [4, 6, 2],
+      "exp": "INH",
+      "image": "36.jpg"
+    },
+    {
+      "name": "Sister Mary",
+      "subline": "Nun",
+      "starting_at": "South Church",
+      "stats": [7, 3, 1],
+      "exp": "AKH",
+      "image": "37.jpg"
+    },
+    {
+      "name": "&#34;Skids&#34; O'Toole",
+      "subline": "Ex-Convict",
+      "starting_at": "Mas Boarding House",
+      "stats": [3, 7, 2],
+      "exp": "INH",
+      "image": "38.jpg"
+    },
+    {
+      "name": "Tommy Muldoon",
+      "subline": "Rookie Cop",
+      "starting_at": "Police Station",
+      "stats": [6, 4, 1],
+      "exp": "INH",
+      "image": "39.jpg"
+    },
+    {
+      "name": "Tony Morgan",
+      "subline": "Bounty Hunter",
+      "starting_at": "St Marys Hospital",
+      "stats": [3, 7, 2],
+      "exp": "KH",
+      "image": "40.jpg"
+    },
+    {
+      "name": "Trish Scarborough",
+      "subline": "Spy",
+      "starting_at": "Newspaper",
+      "stats": [6, 4, 1],
+      "exp": "INH",
+      "image": "41.jpg"
+    },
+    {
+      "name": "Ursula Downs",
+      "subline": "Explorer",
+      "starting_at": "special",
+      "stats": [5, 5, 2],
+      "exp": "INH",
+      "image": "42.jpg"
+    },
+    {
+      "name": "Vincent Lee",
+      "subline": "Doctor",
+      "starting_at": "St Marys Hospital",
+      "stats": [5, 5, 2],
+      "exp": "AKH",
+      "image": "43.jpg"
+    },
+    {
+      "name": "Wendy Adams",
+      "subline": "Urchin",
+      "starting_at": "Bank of Arkham",
+      "stats": [4, 4, 3],
+      "exp": "KH",
+      "image": "44.jpg"
+    },
+    {
+      "name": "William Yorick",
+      "subline": "Gravedigger",
+      "starting_at": "South Church",
+      "stats": [4, 6, 1],
+      "exp": "INH",
+      "image": "45.jpg"
+    },
+    {
+      "name": "Wilson Richards",
+      "subline": "Handyman",
+      "starting_at": "Train Station",
+      "stats": [5, 5, 4],
+      "exp": "DUH",
+      "image": "46.jpg"
+    },
+    {
+      "name": "Zoey Samaras",
+      "subline": "Chef",
+      "starting_at": "Train Station",
+      "stats": [3, 7, 1],
+      "exp": "INH",
+      "image": "47.jpg"
+    }
+  ]
+}

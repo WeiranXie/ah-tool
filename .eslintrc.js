@@ -28,10 +28,6 @@ module.exports = {
     // 'plugin:import/warnings',
   ],
   rules: {
-    // No logging / no debugging :-) Use our wrappers
-    'no-console': 'warn',
-    'no-debugger': 'warn',
-
     /* BASIC RULES */
 
     // Always have spaces around arrays and objects
