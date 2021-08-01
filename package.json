@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist/ && npm run compile",
+    "build": "rm -rf dist/ && npm run compile && npm run fixpath",
     "compile": "vue-cli-service build",
     "deploy": "firebase deploy --only hosting",
     "lint": "npm run eslint && npm run stylelint",
@@ -12,7 +12,8 @@
     "lintfix": "npm run eslintfix && npm run stylelintfix",
     "eslintfix": "vue-cli-service lint --format stylish",
     "stylelintfix": "stylelint --fix './src/**/*.{vue,css,scss,postcss}'",
-    "serve": "vue-cli-service serve"
+    "serve": "vue-cli-service serve",
+    "fixpath": "sed -i '' 's/\\/ah-tool//g' dist/css/* && sed -i '' 's/\\/ah-tool//g' dist/js/* && sed -i '' 's/\\/ah-tool//g' dist/index.html"
   },
   "dependencies": {
     "core-js": "^3.12.1",
