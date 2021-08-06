@@ -2,7 +2,7 @@
   "ancientOnes": [
     {
       "name": "Azathoth",
-      "combatRating": "-∞",
+      "combatRating": -9999,
       "defenses": "None",
       "worshippers": " Since Azathoth promises nothing except destruction, only the insane worship him. However, their fanaticism gives them strength. Maniacs have their toughness increased by 1.",
       "activeText": [
@@ -18,7 +18,7 @@
     },
     {
       "name": "Cthulhu",
-      "combatRating": " -6",
+      "combatRating": -6,
       "defenses": "Special (See Attack)",
       "worshippers": "Cthulhu's worshippers often have the Innsmouth Look, a sign of monstrous ancestors. Cultists have a horror rating of -2 and a horror damage of 2 Sanity.",
       "activeText": [
@@ -70,7 +70,7 @@
     },
     {
       "name": "Hastur",
-      "combatRating": "-X",
+      "combatRating": 0,
       "defenses": "Physical Resistance",
       "worshippers": "Hastur's worshippers ride byakhee mounts that they call with enchanted whistles. Cultists are flying monsters and their combat rating is -2.",
       "activeText": [
@@ -123,62 +123,7 @@
     },
     {
       "name": "Ithaqua",
-      "combatRating": "-3",
-      "defenses": "None",
-      "worshippers": " Ithaqua's worshippers eat the flesh of their fellow men, gaining supernatural power through their dark practice. Cultists have their toughness increased by 2.",
-      "activeText": [
-        "Cultists have +2 toughness",
-        "All weather cards are discarded without their special effects taking place",
-        "Any investigator in a street area at the end of the Mythos phase loses 1 Stamina"
-      ],
-      "power": {
-        "title": "Icy Winds",
-        "text": "While Ithaqua stirs in his slumber, any investigator in a street area at the end of the Mythos phase loses 1 Stamina. In addition, all Weather cards are discarded without their special effects taking place."
-      },
-      "startOfBattle": "Investigators must roll a die for every item they have, discarding the item on a failure",
-      "attack": " Each investigator must pass a Fight (+1) check or lose 2 Stamina. This check's modifier decreases by 1 each turn (+0 the 2nd turn, -1 the 3rd turn, etc.)",
-      "doomTrack": 11,
-      "plots": [
-        {
-          "investigators": {
-            "flavor:": "The winds began to how once more, and I grew agraid of being thrown through the air, as we were at the battle's beginning.",
-            "text": "The investigators attack as normal."
-          },
-          "ancientOne": {
-            "flavor": "As I lost my fooring, I clung desperately to my tommy gun, hoping that I wouldn't lose it in the blizzard.",
-            "title": "Freezing Winds",
-            "text": "Ithaqua's <strong>Start of Battle</strong> ability activates once again, then Ithaqua attacks as normal."
-          }
-        },
-        {
-          "investigators": {
-            "flavor:": "Roaring in anger, the being charged towards us, preparing to swat us like flies.",
-            "text": "The investigators attack as normal."
-          },
-          "ancientOne": {
-            "flavor": "We were scatted like pins as it tore through the group, and I could only pray that no one was seriously hurt.",
-            "title": "Scattered Like Pins",
-            "text": "Ithaqua attacks as normal, but any investigator who fails the <strong>Fight check</strong> this turn loses 4 Stamina instead of 2."
-          }
-        },
-        {
-          "investigators": {
-            "flavor:": "It seemed to be everywhere, rending and biting each of us, and leaving frostbitten wounds all over our bodies.",
-            "text": "Investigators attack as normal."
-          },
-          "ancientOne": {
-            "flavor": "The bitter cold, combined with the physical punishment the creature was dealing out, proved to be too much for the weakest among us, who collapsed.",
-            "title": "Out of Strength",
-            "text": "Each investigator with 2 or less Stamina is <strong>devoured</strong>."
-          }
-        }
-      ],
-      "plotBackImg": "images/epic-battles/ithaqua-back.png",
-      "expansion": "AKH"
-    },
-    {
-      "name": "Ithaqua",
-      "combatRating": "-3",
+      "combatRating": -3,
       "defenses": "None",
       "worshippers": " Ithaqua's worshippers eat the flesh of their fellow men, gaining supernatural power through their dark practice. Cultists have their toughness increased by 2.",
       "activeText": [
@@ -233,7 +178,7 @@
     },
     {
       "name": "Nyarlathotep",
-      "combatRating": "-4",
+      "combatRating": -4,
       "defenses": "Magical Resistance",
       "worshippers": "Nyarlathotep has innumberable cults all over the world. <strong>Cultitsts</strong> have the <strong>Endless</strong> ability.",
       "activeText": [
@@ -279,7 +224,7 @@
     },
     {
       "name": "Shub-Niggurath",
-      "combatRating": "-5",
+      "combatRating": -5,
       "defenses": "Physical Immunity",
       "worshippers": "Shub-Niggurath's young are numberless. <strong>Dark Young</strong> have the <strong>Endless</strong> ability.",
       "activeText": [
@@ -329,7 +274,7 @@
     },
     {
       "name": "Yig",
-      "combatRating": "-3",
+      "combatRating": -3,
       "defenses": "None",
       "worshippers": "Yig's worshippers are actually disguised serpent people. Their bite is highly poisonous. <strong>Cultists</strong> have a combat rating of +0 and a combat damage of 4 Stamina.",
       "activeText": [
@@ -384,7 +329,7 @@
     },
     {
       "name": "Yog-Sothoth",
-      "combatRating": "-5",
+      "combatRating": -5,
       "defenses": "Magical Immunity",
       "worshippers": "Yog-Sothoth's worshippers have powerful magical abilities. Cultitsts have Magical Immunity and a combat rating of -1.",
       "activeText": [

@@ -18,6 +18,8 @@ import { createI18n } from 'vue-i18n'
 
 // Components & Widgets
 import Setup from '@/components/setup.vue'
+import Exps from '@/components/setup/exps.vue'
+import Investigators from '@/components/setup/investigators.vue'
 import translations from '@/jsons/translation.json'
 
 
@@ -39,6 +41,8 @@ const app = createApp(App)
     .use(mixin)
     .use(webp)
     .component('setup', Setup)
+    .component('investigators', Investigators)
+    .component('exps', Exps)
 
 router.isReady()
     .then(() => {
