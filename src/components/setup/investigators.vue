@@ -21,7 +21,7 @@
     </transition>
 
     <!-- Current Investigators -->
-    <div :class="[locked ? 'mt-4': 'mt-16', 'transition-all text-left duration-300 px-2 font-c tracking-tighter mb-16 overflow-scroll h-full']">
+    <div :class="[locked ? 'mt-4': 'mt-16', 'transition-all text-left duration-300 px-2 font-c tracking-tighter mb-16 overflow-scroll pb-12 no-scrollbar h-full']">
       <div class="text-lg mb-2">
         {{ $t('misc.num_gators') }}: {{ number }}
       </div>
@@ -49,14 +49,11 @@
     </div>
 
     <!-- Back / Continue -->
-    <div class="fixed w-full max-w-xl bottom-0 mt-5 flex flex-col mt-4">
+    <div class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
       <div class="flex w-full">
         <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 pt-2 pb-3" @click="toScreen('exps')" v-html="$t('misc.back')" />
         <div class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3" @click="lockInvestigators()" v-html="$t('misc.continue')" />
       </div>
-    </div>
-    <div class="text-center max-w-xl w-full pt-4 py-16 flex flex-col">
-      <img class="fixed -z-2 max-w-xl w-full h-full top-0" :src="require(`@/assets/cards/mythos-front.jp${path}`).default">
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-h bg-bg w-full h-full overflow-scroll text-text text-center tablet:text-left">
+  <div class="font-h w-full h-full overflow-scroll no-scrollbar text-text text-center tablet:text-left">
     <setup />
   </div>
 </template>
@@ -24,3 +24,14 @@
     },
   })
 </script>
+
+<style scoped>
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
