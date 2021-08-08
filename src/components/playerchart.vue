@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 z-10 flex font-c text-center bg-bg w-full h-full">
+  <div class="fixed top-0 z-10 flex font-c text-center overflow-scroll no-scroller bg-bg w-full h-full">
     <div v-if="!locked" class="flex flex-col mx-auto self-center">
       <select v-model="selected" class="block text-lg py-3 my-2 bg-transparent outline-none rounded border border-black px-3 w-64">
         <option disabled value="" v-html="'请选择你的调查员'" />
@@ -97,13 +97,14 @@
           <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
             <p class="w-32 self-center" v-html="getSkillName('skillset_1')" />
             <div class="flex flex-1 justify-between">
-              <div v-for="(values, vsindex) in selected_i.skillsets.skillset_1" :key="vsindex" class="checkbox flex text-2xl flex-col">
+              <div v-for="(values, vsindex) in selected_i.skillsets.skillset_1" :key="vsindex" class="radio flex text-2xl flex-col">
                 <input
-                  :id="`${vsindex}rad1`"
-                  type="checkbox"
+                  :id="`${values}${getSkillName('skillset_1')}`"
+                  type="radio"
                   :value="selected_i.skillsets.skillset_1.indexOf(values)"
+                  name="skillset_1"
                 >
-                <label :for="`${vsindex}rad1`" class="px-4 py-2">
+                <label :for="`${values}${getSkillName('skillset_1')}`" class="px-4 py-2">
                   <div
                     v-for="(v, vi) in values"
                     :key="vi"
@@ -119,13 +120,14 @@
             <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
               <p class="w-32 self-center" v-html="getSkillName('skillset_2')" />
               <div class="flex flex-1 justify-between">
-                <div v-for="(values, vsindex) in selected_i.skillsets.skillset_2" :key="vsindex" class="checkbox flex text-2xl flex-col">
+                <div v-for="(values, vsindex) in selected_i.skillsets.skillset_2" :key="vsindex" class="radio flex text-2xl flex-col">
                   <input
-                    :id="`${vsindex}rad2`"
-                    type="checkbox"
+                    :id="`${values}${getSkillName('skillset_2')}`"
+                    type="radio"
                     :value="selected_i.skillsets.skillset_2.indexOf(values)"
+                    name="skillset_2"
                   >
-                  <label :for="`${vsindex}rad1`" class="px-4 py-2">
+                  <label :for="`${values}${getSkillName('skillset_2')}`" class="px-4 py-2">
                     <div
                       v-for="(v, vi) in values"
                       :key="vi"
@@ -141,13 +143,14 @@
               <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
                 <p class="w-32 self-center" v-html="getSkillName('skillset_3')" />
                 <div class="flex flex-1 justify-between">
-                  <div v-for="(values, vsindex) in selected_i.skillsets.skillset_3" :key="vsindex" class="checkbox flex text-2xl flex-col">
+                  <div v-for="(values, vsindex) in selected_i.skillsets.skillset_3" :key="vsindex" class="radio flex text-2xl flex-col">
                     <input
-                      :id="`${vsindex}rad3`"
-                      type="checkbox"
+                      :id="`${values}${getSkillName('skillset_3')}`"
+                      type="radio"
                       :value="selected_i.skillsets.skillset_3.indexOf(values)"
+                      name="skillset_3"
                     >
-                    <label :for="`${vsindex}rad3`" class="px-4 py-2">
+                    <label :for="`${values}${getSkillName('skillset_3')}`" class="px-4 py-2">
                       <div
                         v-for="(v, vi) in values"
                         :key="vi"
@@ -180,26 +183,26 @@
             </div>
           </div>
         </div>
-        <img class="fixed -z-2 w-full h-full top-0" :src="require(`@/assets/secbg.jp${path}`).default">
-        <div v-if="locked" class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
-          <div class="flex w-full">
-            <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 pt-2 pb-3" @click="locked = false" v-html="$t('misc.back')" />
-            <div
-              v-if="stats_locked"
-              class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3"
-              @click="stats_locked = false"
-              v-html="$t('misc.change')"
-            />
-            <div
-              v-else
-              class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3"
-              @click="stats_locked = true"
-              v-html="$t('misc.confirm_change')"
-            />
-          </div>
-        </div>
       </div>
     </div>
+    <div v-if="locked" class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
+      <div class="flex w-full">
+        <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 pt-2 pb-3" @click="locked = false" v-html="$t('misc.back')" />
+        <div
+          v-if="stats_locked"
+          class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3"
+          @click="stats_locked = false"
+          v-html="$t('misc.change')"
+        />
+        <div
+          v-else
+          class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3"
+          @click="stats_locked = true"
+          v-html="$t('misc.confirm_change')"
+        />
+      </div>
+    </div>
+    <img class="fixed -z-2 w-full h-full top-0" :src="require(`@/assets/secbg.jp${path}`).default">
   </div>
 </template>
 
@@ -278,12 +281,14 @@
 </script>
 
 <style scoped>
-  input[type="checkbox"] {
-    width: 2rem;
-    height: 2rem;
+  input[type="radio"] {
+    display: none;
   }
-  input[type="checkbox"]:checked+label {
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  input[type="radio"]+label {
+    border: 3px solid transparent;
+    border-radius: 10px;
+  }
+  input[type="radio"]:checked+label {
+    border: 3px solid #999;
   }
 </style>
