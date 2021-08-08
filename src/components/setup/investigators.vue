@@ -28,11 +28,11 @@
       <div class="pb-32">
         <div v-for="(i, index) in investigators.current" :key="index">
           <div :class="[rolling_ongoing ? '-top-2 opacity-0' : `transition-all top-0 opacity-100 delay-${index * 50}`, 'ease-in-out relative flex mt-1 py-1']">
-            <div class="relative mr-3">
+            <div class="w-14 h-14 self-center relative mr-3 flex-shrink-0">
               <img class="w-14 h-14" :src="require(`@/assets/investigators/frame.pn${path}`).default">
               <img class="w-12 h-12 absolute top-1/2 absolute transform -translate-x-1/2 left-1/2 -translate-y-1/2" :src="require(`@/assets/investigators/${i.image}`).default">
             </div>
-            <div class="flex flex-col flex-grow self-center">
+            <div class="flex flex-col w-44 flex-shrink-0 self-center">
               <p class="text-lg -mb-1" v-html="i.name" />
               <div class="text-sm">
                 <img class="inline-block -mt-1 w-4 h-auto" :src="require(`@/assets/investigators/Sanity.pn${path}`).default">
@@ -40,6 +40,14 @@
                 <img class="inline-block -mt-0.5 w-3.5 h-auto" :src="require(`@/assets/investigators/Stamina.pn${path}`).default">
                 <p class="inline-block mx-1.5" v-html="i.stats[1]" />
               </div>
+            </div>
+            <div class="text-left flex-grow self-center">
+              <p
+                v-for="(a, $ind) in i.abilities"
+                :key="$ind"
+                class="text-base"
+                v-html="$t(`investigators.${i.abilities[$ind]}`)"
+              />
             </div>
             <div v-if="locked" class="flex">
               <div class="my-3 self-center pt-1.5 rounded pb-1 px-3 bg-opacity-40 bg-white" @click="updateDevoured(i, index)" v-html="$t('misc.devoured')" />
@@ -169,7 +177,7 @@
       lockInvestigators() {
         this.locked = true
         screenStore.updateScreen('investigators', false)
-        screenStore.updateScreen('aos', true)
+        screenStore.updateScreen('mythos', true)
       },
 
       toScreen(s: string) {

@@ -17,6 +17,8 @@ import { webp } from './plugins/webp'
 import { createI18n } from 'vue-i18n'
 
 // Components & Widgets
+// import Mythos from '@/components/mythos.vue'
+import Playerchart from '@/components/playerchart.vue'
 import Setup from '@/components/setup.vue'
 import Exps from '@/components/setup/exps.vue'
 import Investigators from '@/components/setup/investigators.vue'
@@ -43,6 +45,8 @@ const app = createApp(App)
     .component('setup', Setup)
     .component('investigators', Investigators)
     .component('exps', Exps)
+    .component('playerchart', Playerchart)
+    // .component('mythos', Mythos)
 
 router.isReady()
     .then(() => {

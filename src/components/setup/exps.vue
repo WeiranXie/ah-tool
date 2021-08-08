@@ -48,9 +48,10 @@
   import $investigators from '@/jsons/investigators.json'
   import $aos from '@/jsons/aos.json'
   import $exps from '@/jsons/exp.json'
+  import { Investigator } from '@/types'
 
   export default defineComponent({
-    name: 'Setup',
+    name: 'Exps',
     props: {
     },
     data: () => ({
@@ -83,7 +84,7 @@
         setupStore.saveSetup({
           exp: this.selected_exp,
           investigators: {
-            all: available_investigators,
+            all: available_investigators as unknown as Investigator[],
             current: [],
             devoured: [],
             left: [],
