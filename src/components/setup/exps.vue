@@ -1,6 +1,9 @@
 <template>
-  <div :class="[ active ? 'z-2' : 'hidden', 'flex flex-col']">
-    <div class="flex text-center flex-row flex-wrap pb-12">
+  <div id="screen-exps" :class="[ active ? 'z-2' : 'hidden', 'flex flex-col']">
+    <!-- +=====================================================================+
+    | CHOOSE EXPANSIONS                                                        |
+    +======================================================================+ -->
+    <div class="flex text-center flex-row flex-wrap pb-24">
       <div
         v-for="(e, index) in exps"
         :key="index"
@@ -24,18 +27,42 @@
 
     <div class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
       <div class="flex w-full">
+        <!-- +=====================================================================+
+        | SAVE EXPS AND CONTINUE                                                   |
+        +======================================================================+ -->
         <div
           v-if="!locked"
-          class="w-full text-center bg-black bg-opacity-10 text-black px-4 pt-2 pb-3"
+          class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2"
           @click="saveExps()"
           v-html="$t('misc.start')"
         />
-        <div
-          v-else
-          class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3"
-          @click="clearExps()"
-          v-html="$t('misc.restart')"
-        />
+        <!-- +=====================================================================+
+        | TO OTHER SCREENS OR RESTART                                              |
+        +======================================================================+ -->
+        <div v-else class="w-full">
+          <div class="flex border-b border-gray-400">
+            <div
+              class="w-1/3 text-center flex-grow-0 border-r border-gray-400 bg-bg bg-opacity-40 text-black px-4 py-2"
+              @click="to('investigators')"
+              v-html="$t('misc.browse_investigators')"
+            />
+            <div
+              class="w-1/3 text-center flex-grow-0 border-r border-gray-400 bg-bg bg-opacity-40 text-black px-4 py-2"
+              @click="to('aos')"
+              v-html="$t('misc.browse_aos')"
+            />
+            <div
+              class="w-1/3 text-center flex-grow-0 bg-bg bg-opacity-40 text-black px-4 py-2"
+              @click="to('mythos')"
+              v-html="$t('misc.mythos')"
+            />
+          </div>
+          <div
+            class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2"
+            @click="clearExps()"
+            v-html="$t('misc.restart')"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -43,8 +70,7 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import { setupStore } from '@/stores/setup'
-  import { screenStore } from '@/stores/screen'
+  import { $initSetup, $setup, $screen, Screen } from '@/init/state'
   import $investigators from '@/jsons/investigators.json'
   import $aos from '@/jsons/aos.json'
   import $exps from '@/jsons/exp.json'
@@ -69,10 +95,8 @@
         return $aos.ancientOnes
       },
       active() {
-        return screenStore.getState().exps
+        return $screen.value === 'exps'
       },
-    },
-    created() {
     },
     methods: {
       /* ========================================================================== *
@@ -81,7 +105,7 @@
       saveExps() {
         const available_aos = this.aos.filter((a) => this.selected_exp.includes(a.expansion))
         const available_investigators = this.investigators.filter((i) => this.selected_exp.includes(i.exp))
-        setupStore.saveSetup({
+        $setup.value = {
           exp: this.selected_exp,
           investigators: {
             all: available_investigators as unknown as Investigator[],
@@ -91,34 +115,28 @@
           },
           aos: {
             all: available_aos,
-            current: '',
+            current: undefined,
           },
-        })
+        }
 
         /* ========================================================================== *
         * Next screen: investigators                                                  *
         * -------------------------------------------------------------------------- */
         this.locked = true,
-        screenStore.updateScreen('exps', false)
-        screenStore.updateScreen('investigators', true)
+        $screen.value = 'investigators'
       },
 
       clearExps() {
         this.locked = false,
         this.selected_exp = [ 'AKH' ]
-        setupStore.saveSetup({
-          exp: this.selected_exp,
-          investigators: {
-            all: [],
-            current: [],
-            devoured: [],
-            left: [],
-          },
-          aos: {
-            all: [],
-            current: '',
-          },
-        })
+        $setup.value = $initSetup
+      },
+
+      /* ========================================================================== *
+      * Jump to other screen                                                        *
+      * -------------------------------------------------------------------------- */
+      to(screen: Screen) {
+        $screen.value = screen
       },
     },
   })

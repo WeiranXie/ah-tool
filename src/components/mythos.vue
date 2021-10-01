@@ -120,8 +120,8 @@
           </div>
         </div>
         <div class="flex w-full">
-          <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 pt-2 pb-3" @click="$emit('back', true)" v-html="$t('misc.back')" />
-          <div class="w-full text-center bg-bg bg-opacity-40 text-black px-4 pt-2 pb-3" @click="drawMythos()" v-html="$t('misc.draw')" />
+          <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2" @click="$emit('back', true)" v-html="$t('misc.back')" />
+          <div class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2" @click="drawMythos()" v-html="$t('misc.draw')" />
         </div>
       </div>
     </div>
