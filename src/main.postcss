@@ -28,6 +28,17 @@
     left: 50%;
     position: fixed;
   }
+
+  /* Scrollbar */
+  .overflow-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  .overflow-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
   /*@media only screen and (min-height: 813px) and (orientation:portrait) {
     body {
       transform-origin: left top;

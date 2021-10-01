@@ -40,14 +40,14 @@
         | TO OTHER SCREENS OR RESTART                                              |
         +======================================================================+ -->
         <div v-else class="w-full">
-          <div class="flex border-b border-gray-400">
+          <div class="flex">
             <div
-              class="w-1/3 text-center flex-grow-0 border-r border-gray-400 bg-bg bg-opacity-40 text-black px-4 py-2"
+              class="w-1/3 text-center flex-grow-0 border-r border-gray-300 bg-bg bg-opacity-40 text-black px-4 py-2"
               @click="to('investigators')"
               v-html="$t('misc.browse_investigators')"
             />
             <div
-              class="w-1/3 text-center flex-grow-0 border-r border-gray-400 bg-bg bg-opacity-40 text-black px-4 py-2"
+              class="w-1/3 text-center flex-grow-0 border-r border-gray-300 bg-bg bg-opacity-40 text-black px-4 py-2"
               @click="to('aos')"
               v-html="$t('misc.browse_aos')"
             />
@@ -58,7 +58,7 @@
             />
           </div>
           <div
-            class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2"
+            class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2"
             @click="clearExps()"
             v-html="$t('misc.restart')"
           />
