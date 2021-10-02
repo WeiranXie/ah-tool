@@ -4,24 +4,11 @@
     | CHOOSE EXPANSIONS                                                        |
     +======================================================================+ -->
     <div class="flex text-center flex-row flex-wrap pb-24">
-      <div
-        v-for="(e, index) in exps"
-        :key="index"
-        class="flex flex-1/2 max-w-1/2 flex-col tablet:flex-1/3 border border-collapse"
-      >
-        <label :for="e.id" :class="[!selected_exp.includes(e.id) ? 'opacity-20' : '', 'text-bg bg-black w-full py-3 px-4 checked-sibling:text-black']">
+      <div v-for="(e, index) in exps" :key="index" class="flex flex-1/2 max-w-1/2 flex-col tablet:flex-1/3 border border-collapse">
+        <div :class="[!selected_exp.includes(e.id) ? 'opacity-20' : '', 'text-bg bg-black w-full py-3 px-4 checked-sibling:text-black']" @click="toggleExp(e.id)">
           <img class="h-36 my-3 mx-auto" :src="require(`@/assets/exps/${e.id}.jpg`).default">
-          <input
-            :id="e.id"
-            v-model="selected_exp"
-            type="checkbox"
-            name="some-radios"
-            :value="e.id"
-            :disabled="e.id === 'AKH' || locked"
-            class="hidden"
-          >
           {{ $t(`exp.${e.id}`) }}
-        </label>
+        </div>
       </div>
     </div>
 
@@ -74,7 +61,7 @@
   import $investigators from '@/jsons/investigators.json'
   import $aos from '@/jsons/aos.json'
   import $exps from '@/jsons/exp.json'
-  import { Investigator } from '@/types'
+  import { Investigator, Exp, AO } from '@/types'
 
   export default defineComponent({
     name: 'Exps',
@@ -82,17 +69,17 @@
     },
     data: () => ({
       locked: false,
-      selected_exp: [ 'AKH' ],
+      selected_exp: [ 'AKH' ] as Exp[],
     }),
     computed: {
       exps() {
-        return $exps.expansions
+        return $exps.expansions as { id: Exp; name: string; year: number }[]
       },
       investigators() {
-        return $investigators.investigators
+        return $investigators.investigators as Investigator[]
       },
       aos() {
-        return $aos.ancientOnes
+        return $aos.ancientOnes as AO[]
       },
       active() {
         return $screen.value === 'exps'
@@ -102,13 +89,22 @@
       /* ========================================================================== *
       * Filtering available investigators and aos, push to store                    *
       * -------------------------------------------------------------------------- */
+      toggleExp(exp: Exp) {
+        const selected = this.selected_exp
+        if (selected.includes(exp)) selected.splice(selected.indexOf(exp), 1)
+        else selected.push(exp)
+      },
+
+      /* ========================================================================== *
+      * Filtering available investigators and aos, push to store                    *
+      * -------------------------------------------------------------------------- */
       saveExps() {
         const available_aos = this.aos.filter((a) => this.selected_exp.includes(a.expansion))
         const available_investigators = this.investigators.filter((i) => this.selected_exp.includes(i.exp))
         $setup.value = {
           exp: this.selected_exp,
           investigators: {
-            all: available_investigators as unknown as Investigator[],
+            all: available_investigators,
             current: [],
             devoured: [],
             left: [],

@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { AO, Investigator, JsonData } from '@/types'
+import { AO, Investigator, Mythos } from '@/types'
 
 export type Screen =
   | 'setup'
@@ -26,14 +26,14 @@ export interface Setup {
 
 export interface MythosDeck {
   locations: string[],
-  all: JsonData[],
+  all: Mythos[],
   rumor_solved: false,
   current: {
-    headline: JsonData,
-    rumor: JsonData,
-    environment: JsonData,
+    headline: Mythos,
+    rumor: Mythos,
+    environment: Mythos,
   },
-  left: JsonData[],
+  left: Mythos[],
   count: number,
 }
 
@@ -53,14 +53,14 @@ export const $initSetup = {
 
 export const $initMythosDeck = {
   locations: [] as string[],
-  all: [] as JsonData[],
+  all: [] as Mythos[],
   rumor_solved: false,
   current: {
-    headline: {} as JsonData,
-    rumor: {} as JsonData,
-    environment: {} as JsonData,
+    headline: {} as Mythos,
+    rumor: {} as Mythos,
+    environment: {} as Mythos,
   },
-  left: [] as JsonData[],
+  left: [] as Mythos[],
   count: 0,
 }
 

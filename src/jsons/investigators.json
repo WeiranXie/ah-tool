@@ -18,7 +18,7 @@
       "clues": 3,
       "money": 5,
       "abilities": ["agnes_ab_1","agnes_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "1.jpg"
     },
@@ -40,7 +40,7 @@
       "clues": 1,
       "money": 3,
       "abilities": ["akachi_ab_1","akachi_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "48.jpg"
     },
@@ -62,7 +62,7 @@
       "clues": 1,
       "money": 1,
       "abilities": ["akachi_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "2.jpg"
     },
@@ -84,7 +84,7 @@
       "clues": 3,
       "money": 1,
       "abilities": ["ashcan_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "3.jpg"
     },
@@ -106,7 +106,7 @@
       "clues": 0,
       "money": 9,
       "abilities": ["bob_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "4.jpg"
     },
@@ -128,7 +128,7 @@
       "clues": 1,
       "money": 7,
       "abilities": ["carolyn_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "5.jpg"
     },
@@ -150,7 +150,7 @@
       "clues": 0,
       "money": 9,
       "abilities": ["charlie_ab_1","charlie_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "6.jpg"
     },
@@ -172,7 +172,7 @@
       "clues": 1,
       "money": 5,
       "abilities": ["daisy_ab_1","daisy_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "7.jpg"
     },
@@ -194,7 +194,7 @@
       "clues": 1,
       "money": 4,
       "abilities": ["darrell_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "8.jpg"
     },
@@ -216,7 +216,7 @@
       "clues": 0,
       "money": 5,
       "abilities": ["dexter_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "9.jpg"
     },
@@ -238,7 +238,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["diana_ab_1","diana_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "10.jpg"
     },
@@ -260,7 +260,7 @@
       "clues": 0,
       "money": 8,
       "abilities": ["finn_ab_1","finn_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "11.jpg"
     },
@@ -282,7 +282,7 @@
       "clues": 0,
       "money": 7,
       "abilities": ["george_ab_1","george_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "12.jpg"
     },
@@ -304,7 +304,7 @@
       "clues": 2,
       "money": 7,
       "abilities": ["gloria_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "13.jpg"
     },
@@ -326,7 +326,7 @@
       "clues": 1,
       "money": 3,
       "abilities": ["hank_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "14.jpg"
     },
@@ -348,7 +348,7 @@
       "clues": 1,
       "money": 5,
       "abilities": ["harvey_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "15.jpg"
     },
@@ -370,7 +370,7 @@
       "clues": 2,
       "money": 7,
       "abilities": ["jacqueline_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "16.jpg"
     },
@@ -392,7 +392,7 @@
       "clues": 0,
       "money": 10,
       "abilities": ["jenny_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "17.jpg"
     },
@@ -414,7 +414,7 @@
       "clues": 3,
       "money": 3,
       "abilities": ["jim_ab_1","jim_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "18.jpg"
     },
@@ -436,7 +436,7 @@
       "clues": 3,
       "money": 8,
       "abilities": ["joe_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "19.jpg"
     },
@@ -458,7 +458,7 @@
       "clues": 2,
       "money": 7,
       "abilities": ["kate_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "20.jpg"
     },
@@ -480,7 +480,7 @@
       "clues": 2,
       "money": 5,
       "abilities": ["leo_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "21.jpg"
     },
@@ -504,7 +504,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["lily_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "22.jpg"
     },
@@ -526,7 +526,7 @@
       "clues": 2,
       "money": 6,
       "abilities": ["lola_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "23.jpg"
     },
@@ -548,7 +548,7 @@
       "clues": 1,
       "money": 6,
       "abilities": ["luke_ab_1","luke_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "24.jpg"
     },
@@ -570,7 +570,7 @@
       "clues": 4,
       "money": 6,
       "abilities": ["mandy_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "25.jpg"
     },
@@ -592,7 +592,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["marie_ab_1","marie_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "26.jpg"
     },
@@ -614,7 +614,7 @@
       "clues": 3,
       "money": 4,
       "abilities": ["mark_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "27.jpg"
     },
@@ -636,7 +636,7 @@
       "clues": 0,
       "money": 8,
       "abilities": ["michael_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "28.jpg"
     },
@@ -658,7 +658,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["minh_ab_1","minh_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "29.jpg"
     },
@@ -680,7 +680,7 @@
       "clues": 1,
       "money": 7,
       "abilities": ["monterey_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "30.jpg"
     },
@@ -702,7 +702,7 @@
       "clues": 3,
       "money": 3,
       "abilities": ["norman_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "31.jpg"
     },
@@ -724,7 +724,7 @@
       "clues": 3,
       "money": 2,
       "abilities": ["patrice_ab_1","patrice_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "32.jpg"
     },
@@ -746,7 +746,7 @@
       "clues": 3,
       "money": 3,
       "abilities": ["rex_ab_1","rex_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "33.jpg"
     },
@@ -768,7 +768,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["rita_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "34.jpg"
     },
@@ -790,7 +790,7 @@
       "clues": 2,
       "money": 3,
       "abilities": ["roland_ab_1","roland_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "35.jpg"
     },
@@ -812,7 +812,7 @@
       "clues": 2,
       "money": 7,
       "abilities": ["silas_ab_1","silas_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "36.jpg"
     },
@@ -834,7 +834,7 @@
       "clues": 0,
       "money": 0,
       "abilities": ["mary_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "37.jpg"
     },
@@ -856,7 +856,7 @@
       "clues": 3,
       "money": 5,
       "abilities": ["skids_ab_1","skids_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "38.jpg"
     },
@@ -878,7 +878,7 @@
       "clues": 2,
       "money": 2,
       "abilities": ["tommy_ab_1","tommy_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "39.jpg"
     },
@@ -900,7 +900,7 @@
       "clues": 3,
       "money": 6,
       "abilities": ["tony_ab_1","tony_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "40.jpg"
     },
@@ -922,7 +922,7 @@
       "clues": 2,
       "money": 4,
       "abilities": ["trish_ab_1","trish_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "41.jpg"
     },
@@ -944,7 +944,7 @@
       "clues": 1,
       "money": 4,
       "abilities": ["ursula_ab_1","ursula_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "42.jpg"
     },
@@ -966,7 +966,7 @@
       "clues": 1,
       "money": 9,
       "abilities": ["vincent_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "AKH",
       "image": "43.jpg"
     },
@@ -988,7 +988,7 @@
       "clues": 3,
       "money": 3,
       "abilities": ["wendy_ab_1","wendy_ab_2","wendy_ab_3"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "KH",
       "image": "44.jpg"
     },
@@ -1010,7 +1010,7 @@
       "clues": 0,
       "money": 4,
       "abilities": ["william_ab_1","william_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "45.jpg"
     },
@@ -1032,7 +1032,7 @@
       "clues": 0,
       "money": 4,
       "abilities": ["wilson_ab_1","wilson_ab_2"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "DUH",
       "image": "46.jpg"
     },
@@ -1054,7 +1054,7 @@
       "clues": 4,
       "money": 2,
       "abilities": ["zoey_ab_1"],
-      "posesstions": "",
+      "possessions": "",
       "exp": "INH",
       "image": "47.jpg"
     }

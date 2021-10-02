@@ -18,7 +18,7 @@
     <!-- Current Investigators -->
     <div :class="[locked ? 'mt-4': 'mt-16', 'transition-all duration-300 px-2 font-c tracking-tighter mb-16 overflow-scroll h-full']">
       <div>
-        {{ ao }}
+        {{ ao.name }}
       </div>
     </div>
 
@@ -40,7 +40,7 @@
   const ao_temp = {
     name: '',
     doomTrack: 0,
-    expansion: '',
+    expansion: 'AKH',
   } as AO
 
   export default defineComponent({
