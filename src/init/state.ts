@@ -1,6 +1,9 @@
 import { ref } from 'vue'
-import { AO, Investigator, Mythos } from '@/types'
+import { AO, Investigator, Mythos, Exp, Location } from '@/types'
 
+/* ========================================================================== *
+ * Screens                                                                    *
+ * -------------------------------------------------------------------------- */
 export type Screen =
   | 'setup'
   | 'exps'
@@ -10,8 +13,12 @@ export type Screen =
   | 'ah_encounters'
   | 'ow_encounters'
 
+/* ========================================================================== *
+ * Setup: Expansions, Investigators, Locations, AO                            *
+ * -------------------------------------------------------------------------- */
 export interface Setup {
-  exp: string[],
+  exp: Exp[],
+  locations: Location[],
   investigators: {
     all: Investigator[],
     current: Investigator[],
@@ -24,21 +31,38 @@ export interface Setup {
   }
 }
 
+/* ========================================================================== *
+ * Mythos Deck                                                                *
+ * -------------------------------------------------------------------------- */
 export interface MythosDeck {
-  locations: string[],
   all: Mythos[],
   rumor_solved: false,
   current: {
-    headline: Mythos,
-    rumor: Mythos,
-    environment: Mythos,
+    headline?: Mythos,
+    rumor?: Mythos,
+    environment?: Mythos,
   },
   left: Mythos[],
   count: number,
 }
 
-export const $initSetup = {
-  exp: [] as string[],
+/* ========================================================================== *
+ * Save Data                                                                  *
+ * -------------------------------------------------------------------------- */
+export interface SaveData extends Setup {
+  started: boolean,
+  loaded: boolean,
+  reset?: boolean,
+  mythos?: MythosDeck,
+}
+
+
+/* ========================================================================== *
+ * Initial states                                                             *
+ * -------------------------------------------------------------------------- */
+// Setup
+export const $initSetup: Setup = {
+  exp: [] as Exp[],
   investigators: {
     all: [] as Investigator[],
     current: [] as Investigator[],
@@ -49,10 +73,11 @@ export const $initSetup = {
     all: [] as AO[],
     current: undefined as AO | undefined,
   },
+  locations: [] as Location[],
 }
 
-export const $initMythosDeck = {
-  locations: [] as string[],
+// Mythos Deck
+export const $initMythosDeck: MythosDeck = {
   all: [] as Mythos[],
   rumor_solved: false,
   current: {
@@ -64,6 +89,6 @@ export const $initMythosDeck = {
   count: 0,
 }
 
-export const $setup = ref($initSetup)
-export const $mythosDeck = ref($initMythosDeck)
+export const $setup = ref($initSetup as Setup)
+export const $mythosDeck = ref($initMythosDeck as MythosDeck)
 export const $screen = ref('exps' as Screen)

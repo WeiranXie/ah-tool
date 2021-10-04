@@ -89,6 +89,7 @@
       * --------------------------------------------------------------------------- */
       lockAOs() {
         this.locked = true
+        this.toScreen('mythos')
       },
 
       toScreen(s: Screen) {

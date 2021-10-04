@@ -6,17 +6,6 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/:locale',
     component: PageTemplate,
-    meta: {
-      type: 'page',
-      slug: 'home-b2c',
-    },
-  },
-  {
-    path: '/:locale/:slug',
-    component: PageTemplate,
-    meta: {
-      type: 'page',
-    },
   },
 ]
 

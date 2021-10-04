@@ -19,9 +19,10 @@ import { createI18n } from 'vue-i18n'
 // Components & Widgets
 // import Mythos from '@/components/mythos.vue'
 import Playerchart from '@/components/playerchart.vue'
-import Setup from '@/components/setup.vue'
+import Setup from '@/components/setup/setup.vue'
 import AOs from '@/components/setup/aos.vue'
 import Exps from '@/components/setup/exps.vue'
+import Mythos from '@/components/mythos.vue'
 import Investigators from '@/components/setup/investigators.vue'
 import translations from '@/jsons/translation.json'
 
@@ -48,7 +49,7 @@ const app = createApp(App)
     .component('aos', AOs)
     .component('exps', Exps)
     .component('playerchart', Playerchart)
-    // .component('mythos', Mythos)
+    .component('mythos', Mythos)
 
 router.isReady()
     .then(() => {
