@@ -19,167 +19,130 @@
     </div>
     <div v-else-if="Object.keys(selected_i).length">
       <div class="p-4 w-screen">
-        <div class="flex border-b pb-4 mb-4 border-gray-400">
-          <div class="relative w-24 h-24">
+        <div class="flex border-b pb-4 mb-3 border-gray-400">
+          <div class="relative flex-shrink-0 self-center w-24 h-24">
             <img class="w-20 h-20 absolute top-1/2 absolute transform -translate-x-1/2 left-1/2 -translate-y-1/2" :src="require(`@/assets/investigators/${selected_i.image}`).default">
             <img class="w-24 h-24 relative" :src="require(`@/assets/investigators/frame.pn${path}`).default">
           </div>
-          <div class="self-center text-center px-3 flex-grow">
-            <p class="self-center leading-7 my-2 text-2xl" v-html="selected_i.name" />
-            <p class="" v-html="selected_i.subline" />
+          <div class="self-center text-center pl-2.5 flex-grow">
+            <p class="self-center leading-7 mt-1 mb-0.5 text-2xl" v-html="selected_i.name" />
+            <p class="mb-1.5 text-sm" v-html="selected_i.subline" />
+
+            <!---------------------------------------------------------------------------------
+            | STAMINA & SANITY                                                                |
+            ---------------------------------------------------------------------------------->
+            <div class="flex flex-row -mb-1 justify-around text-left">
+              <!-- Sanity -->
+              <div class="flex mx-1.5 flex-col">
+                <div class="flex mx-auto">
+                  <img class="inline-block mt-1 w-8 h-6" :src="require(`@/assets/investigators/Sanity.pn${path}`).default">
+                  <p class="text-2xl inline-block ml-2" v-html="`${selected_i.sanity}/${selected_i.max_stats[0]}`" />
+                </div>
+                <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
+                  <div class="flex w-9 h-9 border-r border-gray-400" @click="addToStat('sanity', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
+                  <div class="flex w-9 h-9" @click="addToStat('sanity', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+                </div>
+              </div>
+              <!-- Stamina -->
+              <div class="flex mx-1.5 flex-col">
+                <div class="flex mx-auto">
+                  <img class="inline-block mt-0.5 w-7 h-7" :src="require(`@/assets/investigators/Stamina.pn${path}`).default">
+                  <p class="text-2xl inline-block ml-2" v-html="`${selected_i.stamina}/${selected_i.max_stats[1]}`" />
+                </div>
+                <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
+                  <div class="flex w-9 h-9 border-r border-gray-400" @click="addToStat('stamina', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
+                  <div class="flex w-9 h-9" @click="addToStat('stamina', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col text-left border-b pb-2 mb-4 border-gray-400">
+        <div class="flex flex-col text-left border-b pb-1 mb-3 border-gray-400">
           <p
             v-for="(a, $ind) in selected_i.abilities"
             :key="$ind"
-            class="font-t mb-2"
+            class="text-sm font-t mb-2"
             v-html="$t(`investigators.${selected_i.abilities[$ind]}`)"
           />
         </div>
-        <div class="flex flex-row justify-around text-left border-b pb-4 mb-4 border-gray-400">
-          <!-- Stamina -->
-          <div class="flex flex-col">
-            <div class="flex mt-1 mx-auto">
-              <img class="inline-block -mt-1 -ml-1 w-9 h-9" :src="require(`@/assets/investigators/Stamina.pn${path}`).default">
-              <p class="text-3xl inline-block ml-3" v-html="`${selected_i.stats[1]}/${max_stats[1]}`" />
-            </div>
-            <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
-              <div class="flex w-11 h-11 border-r border-gray-400" @click="addToStat('stamina', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
-              <div class="flex w-11 h-11" @click="addToStat('stamina', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
-            </div>
-          </div>
-          <!-- Sanity -->
-          <div class="flex flex-col">
-            <div class="flex mt-1 mx-auto">
-              <img class="inline-block -mt-0.5 -ml-1 w-11 h-8" :src="require(`@/assets/investigators/Sanity.pn${path}`).default">
-              <p class="text-3xl inline-block ml-3" v-html="`${selected_i.stats[0]}/${max_stats[0]}`" />
-            </div>
-            <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
-              <div class="flex w-11 h-11 border-r border-gray-400" @click="addToStat('sanity', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
-              <div class="flex w-11 h-11" @click="addToStat('sanity', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+
+        <!---------------------------------------------------------------------------------
+        | SKILL CHECKS                                                                    |
+        ---------------------------------------------------------------------------------->
+        <div class="flex flex-row justify-around text-left border-b pb-2 mb-2.5 border-gray-400">
+          <!-- focus -->
+          <div v-for="(stat, key) in selected_i.check" :key="key" class="flex flex-col">
+            <div class="flex mx-auto flex-wrap text-center">
+              <span class="text-sm w-full">
+                {{ $t(`investigators.${key}`) }}
+              </span>
+              <span class="w-full">{{ stat }}</span>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-row justify-around text-left border-b pb-4 mb-4 border-gray-400">
+        <!---------------------------------------------------------------------------------
+        | CLUES & MONEY                                                                   |
+        ---------------------------------------------------------------------------------->
+        <div class="flex flex-row justify-around text-left border-b pb-2 mb-2 border-gray-400">
           <!-- focus -->
-          <div class="flex flex-col">
-            <div class="flex mt-1 mx-auto">
-              <p class="text-2xl inline-block -ml-1" v-html="`专注：${selected_i.stats[2]}`" />
-            </div>
-          </div>
-          <!-- money -->
-          <div class="flex flex-col">
-            <div class="flex mt-1 mx-auto">
-              <p class="text-2xl inline-block ml-3" v-html="`$ ${selected_i.money}`" />
-            </div>
-            <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
-              <div class="flex w-11 h-11 border-r border-gray-400" @click="addToStat('money', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
-              <div class="flex w-11 h-11" @click="addToStat('money', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+          <div class="flex flex-col flex-nowrap self-center">
+            <div>
+              <span class="mr-0.5 text-sm">
+                {{ $t('investigators.focus') }}
+              </span>
+              {{ selected_i.max_stats[2] }}
             </div>
           </div>
           <!-- clue -->
           <div class="flex flex-col">
-            <div class="flex mt-1 mx-auto">
-              <img class="inline-block -mt-0.5 -ml-1 w-8 h-8" :src="require(`@/assets/tokens/clue.pn${path}`).default">
-              <p class="text-2xl inline-block ml-3" v-html="`${selected_i.clues}`" />
+            <div class="flex mx-auto">
+              <img class="inline-block w-5 h-5" :src="require(`@/assets/tokens/clue.pn${path}`).default">
+              <p class="inline-block ml-2 self-center" v-html="`${selected_i.clues}`" />
             </div>
             <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
-              <div class="flex w-11 h-11 border-r border-gray-400" @click="addToStat('clue', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
-              <div class="flex w-11 h-11" @click="addToStat('clue', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+              <div class="flex w-9 h-9 border-r border-gray-400" @click="addToStat('clue', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
+              <div class="flex w-9 h-9" @click="addToStat('clue', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
+            </div>
+          </div>
+          <!-- money -->
+          <div class="flex flex-col">
+            <div class="flex mx-auto">
+              <p class="inline-block" v-html="`$ ${selected_i.money}`" />
+            </div>
+            <div v-if="!stats_locked" class="flex border mx-auto mt-2 rounded border-gray-400">
+              <div class="flex w-9 h-9 border-r border-gray-400" @click="addToStat('money', false)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>–</p>'" />
+              <div class="flex w-9 h-9" @click="addToStat('money', true)" v-html="'<p class=&#34;self-center w-full text-center font-t text-3xl&#34;>+</p>'" />
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col justify-around text-left pb-4 mb-4 border-gray-400">
-          <!-- Skillsets 1 -->
-          <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
-            <p class="w-32 self-center" v-html="getSkillName('skillset_1')" />
-            <div class="flex flex-1 justify-between">
-              <div v-for="(values, vsindex) in selected_i.skillsets.skillset_1" :key="vsindex" class="radio flex text-2xl flex-col">
-                <input
-                  :id="`${values}${getSkillName('skillset_1')}`"
-                  type="radio"
-                  :value="selected_i.skillsets.skillset_1.indexOf(values)"
-                  name="skillset_1"
-                >
-                <label :for="`${values}${getSkillName('skillset_1')}`" class="px-4 py-2">
-                  <div
-                    v-for="(v, vi) in values"
-                    :key="vi"
-                    v-html="v"
-                  />
-                </label>
+        <!---------------------------------------------------------------------------------
+        | SKILL SLIDER                                                                    |
+        ---------------------------------------------------------------------------------->
+        <div class="flex flex-col justify-around text-left pb-3 mb-3 border-gray-400">
+          <div
+            v-for="(sets, setsindex) in selected_i.skillsets"
+            :key="setsindex"
+            class="flex flex-row mb-2 pb-1.5 border-b border-gray-300"
+            :class="{ hidden: !sets.length}"
+          >
+            <p class="w-32 text-sm px-4 self-center" v-html="getSkillName(setsindex)" />
+            <div v-if="sets" class="flex flex-1 justify-between">
+              <div
+                v-for="(set, setindex) in sets"
+                :key="setindex"
+                class="sets flex px-3 -mt-0.5 py-0.5 flex-col"
+                :class="{ selected: setindex === selected_i.selected_skills[setsindex]}"
+              >
+                <div
+                  v-for="(value, vindex) in set"
+                  :key="vindex"
+                  class="-mb-1"
+                  @click="setSkills(setsindex, sets, set)"
+                  v-html="value"
+                />
               </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col justify-around text-left pb-4 mb-4 border-gray-400">
-            <!-- Skillsets 2 -->
-            <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
-              <p class="w-32 self-center" v-html="getSkillName('skillset_2')" />
-              <div class="flex flex-1 justify-between">
-                <div v-for="(values, vsindex) in selected_i.skillsets.skillset_2" :key="vsindex" class="radio flex text-2xl flex-col">
-                  <input
-                    :id="`${values}${getSkillName('skillset_2')}`"
-                    type="radio"
-                    :value="selected_i.skillsets.skillset_2.indexOf(values)"
-                    name="skillset_2"
-                  >
-                  <label :for="`${values}${getSkillName('skillset_2')}`" class="px-4 py-2">
-                    <div
-                      v-for="(v, vi) in values"
-                      :key="vi"
-                      v-html="v"
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-col justify-around text-left pb-4 mb-4 border-gray-400">
-              <!-- Skillsets 3 -->
-              <div class="flex flex-row mb-2 pb-2 border-b border-gray-300">
-                <p class="w-32 self-center" v-html="getSkillName('skillset_3')" />
-                <div class="flex flex-1 justify-between">
-                  <div v-for="(values, vsindex) in selected_i.skillsets.skillset_3" :key="vsindex" class="radio flex text-2xl flex-col">
-                    <input
-                      :id="`${values}${getSkillName('skillset_3')}`"
-                      type="radio"
-                      :value="selected_i.skillsets.skillset_3.indexOf(values)"
-                      name="skillset_3"
-                    >
-                    <label :for="`${values}${getSkillName('skillset_3')}`" class="px-4 py-2">
-                      <div
-                        v-for="(v, vi) in values"
-                        :key="vi"
-                        v-html="v"
-                      />
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div v-for="(sets, index) in selected_i.skillsets" :key="index" class="flex flex-row mb-2 pb-2 border-b border-gray-300">
-            <p class="w-32 self-center" v-html="getSkillName(index)" />
-            <div class="flex flex-1 justify-between">
-              <div v-for="(values, vsindex) in sets" :key="vsindex" class="flex text-2xl px-4 flex-col">
-                <label>
-                  <div
-                    v-for="(v, vi) in values"
-                    :key="vi"
-                    v-html="v"
-                  />
-                  <input
-                    v-modal="selected_skills[index]"
-                    type="radio"
-                    :value="getIndex(sets, values)"
-                  >
-                </label>
-              </div>
-            </div>
-          </div> -->
             </div>
           </div>
         </div>
@@ -187,7 +150,7 @@
     </div>
     <div v-if="locked" class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
       <div class="flex w-full">
-        <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2" @click="locked = false" v-html="$t('misc.back')" />
+        <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2" @click="goBack()" v-html="$t('misc.back')" />
         <div
           v-if="stats_locked"
           class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2"
@@ -209,7 +172,7 @@
 <script lang="ts">
   import $investigators from '@/jsons/investigators.json'
   import { defineComponent } from 'vue'
-  import { Investigator } from '@/types'
+  import { Investigator, SkillName } from '@/types'
 
   export default defineComponent({
     name: 'PlayerChart',
@@ -221,13 +184,6 @@
       locked: false,
       selected_i: {} as Investigator,
       stats_locked: true,
-      max_stats: [] as number[],
-      selected_skills: {
-        skillset_1: 0 as any,
-        skillset_2: 0 as any,
-        skillset_3: 0 as any,
-        skillset_4: 0 as any,
-      },
     }),
     computed: {
       investigators() {
@@ -235,36 +191,64 @@
       },
     },
     watch: {
-      selected() {
-        if (this.selected && this.investigators) {
+      // Confirm the investigator selection
+      locked(locked) {
+        if (locked && !Object.keys(this.selected_i).length && this.selected && this.investigators) {
           this.investigators.forEach((i) => {
-            if (i.subline === this.selected) {
-              this.selected_i = Object.assign({}, i as unknown as Investigator)
-              this.max_stats = i.stats.map((i) => i)
-            }
+            if (i.subline === this.selected) this.selected_i = Object.assign({}, i as Investigator)
           })
         }
       },
+      // Update skill checks and save chart to local storage
+      selected_i: {
+        handler(i) {
+          if (Object.keys(i).length) {
+            this.getSkillCheck()
+            localStorage.setItem('ah_active_investigator', JSON.stringify(i))
+          }
+        },
+        deep: true,
+        immediate: true,
+      },
     },
+    // Load player chart
     created() {
-      // console.log(require('./assets'))
+      const stored_i = localStorage.getItem('ah_active_investigator')
+      if (stored_i) {
+        this.selected_i = JSON.parse(stored_i)
+        this.locked = true
+      }
     },
     methods: {
-      getIndex(arr: number[][], i: number[]) {
-        return arr.indexOf(i) || 0
+      // Choose skill set
+      setSkills(index: number, sets: number[][], set: number[]) {
+        this.selected_i.selected_skills[index] = sets.indexOf(set)
+        console.log(index, sets, set)
       },
-      getSkillName(key: 'skillset_1' | 'skillset_2' | 'skillset_3' | 'skillset_4') {
-        if (key in this.selected_i.skillsets) return this.selected_i.skillnames[key]
+      getSkillName(index: number) {
+        const keys = this.selected_i.skillnames[index]
+        if (keys) return [ this.$t(`investigators.${keys[0]}`), this.$t(`investigators.${keys[1]}`) ].join('<br/>')
       },
+      getSkillCheck() {
+        const skills: SkillName[] = Array.prototype.concat.apply([], this.selected_i.skillnames)
+        const stats = Array.prototype.concat.apply([], this.selected_i.skillsets.map((sets, index) => sets[this.selected_i.selected_skills[index]]))
+        skills.forEach((skill, index) => {
+          if (skill !== 'max_sanity' && skill !== 'max_stamina') this.selected_i.check[skill] = stats[index]
+          else if (skill === 'max_sanity') this.selected_i.max_stats[0] = stats[index]
+          else this.selected_i.max_stats[1] = stats[index]
+        })
+      },
+      // Modify investigator status
       addToStat(key: string, add: boolean) {
         switch (key) {
           case 'stamina':
-            if (add) this.selected_i.stats[1]++
-            else this.selected_i.stats[1]--
+            console.log(this.selected_i)
+            if (add) this.selected_i.stamina++
+            else this.selected_i.stamina--
             break
           case 'sanity':
-            if (add) this.selected_i.stats[0]++
-            else this.selected_i.stats[0]--
+            if (add) this.selected_i.sanity++
+            else this.selected_i.sanity--
             break
           case 'clue':
             if (add) this.selected_i.clues++
@@ -276,19 +260,20 @@
             break
         }
       },
+      goBack() {
+        this.locked = false
+        this.selected_i = {} as Investigator
+      },
     },
   })
 </script>
 
 <style scoped>
-  input[type="radio"] {
-    display: none;
-  }
-  input[type="radio"]+label {
+  .sets {
     border: 3px solid transparent;
     border-radius: 10px;
   }
-  input[type="radio"]:checked+label {
+  .sets.selected {
     border: 3px solid #999;
   }
 </style>

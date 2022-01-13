@@ -97,18 +97,17 @@ export interface Mythos {
   expansion: Exp,
 }
 
-export interface Skillnames {
-  skillset_1: [string, string],
-  skillset_2: [string, string],
-  skillset_3: [string, string],
-  skillset_4?: [string, string],
+export interface Item {
+  name: string,
+  description: string,
 }
 
-export interface Skillsets {
-  skillset_1: [number, number][],
-  skillset_2: [number, number][],
-  skillset_3: [number, number][],
-  skillset_4?: [number, number][],
+export interface Possessions {
+  commons: Item[],
+  uniques: Item[],
+  spells: Item[],
+  skills: Item[],
+  allies: Item[],
 }
 
 export interface AO {
@@ -126,18 +125,31 @@ export interface AO {
   plotBackImg?: string,
 }
 
+export type SkillName = 'sneak' | 'speed' | 'fight' | 'will' | 'lore' | 'luck' | 'max_stamina' | 'max_sanity'
+
 export interface Investigator {
   name: string,
   subline: string,
   starting_at: Location,
-  stats: number[],
-  skillsets: Skillsets,
-  skillnames: Skillnames,
+  max_stats: number[],
+  stamina: number,
+  sanity: number,
+  skillsets: number[][][],
+  skillnames: SkillName[][],
+  selected_skills: number[],
   clues: number,
   money: number,
   abilities: string[],
-  possessions: string,
+  possessions: Possessions,
   exp: Exp,
   image: string,
+  check: {
+    sneak: number,
+    fight: number,
+    will: number,
+    speed: number,
+    luck: number,
+    lore: number,
+  },
 }
 

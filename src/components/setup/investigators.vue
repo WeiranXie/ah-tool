@@ -36,9 +36,9 @@
               <p class="text-lg -mb-1" v-html="i.name" />
               <div class="text-sm">
                 <img class="inline-block -mt-1 w-4 h-auto" :src="require(`@/assets/investigators/Sanity.pn${path}`).default">
-                <p class="inline-block mx-1.5" v-html="i.stats[0]" />
+                <p class="inline-block mx-1.5" v-html="i.max_stats[0]" />
                 <img class="inline-block -mt-0.5 w-3.5 h-auto" :src="require(`@/assets/investigators/Stamina.pn${path}`).default">
-                <p class="inline-block mx-1.5" v-html="i.stats[1]" />
+                <p class="inline-block mx-1.5" v-html="i.max_stats[1]" />
               </div>
             </div>
             <div class="text-left absolute pointer-events-none opacity-0 z-10 top-0 group-hover:opacity-100 transition shadow-md bg-white py-1.5 px-2 mt-0.5 ml-16 self-center">
@@ -61,7 +61,12 @@
     <div class="fixed w-full bottom-0 mt-5 flex flex-col mt-4 bg-bg">
       <div class="flex w-full">
         <div class="w-full text-center bg-black bg-opacity-10 text-black px-4 py-2" @click="toScreen('exps')" v-html="$t('misc.back')" />
-        <div v-if="!locked" class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2" @click="lockInvestigators()" v-html="$t('misc.continue')" />
+        <div
+          v-if="!locked"
+          class="w-full text-center bg-bg bg-opacity-40 text-black px-4 py-2"
+          @click="lockInvestigators()"
+          v-html="$t('misc.continue')"
+        />
       </div>
     </div>
   </div>

@@ -4,21 +4,38 @@
       "name": "Agnes Baker",
       "subline": "Waitress",
       "starting_at": "Velma's Diner",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[3,4],[4,3],[5,2],[6,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[3,4],[4,3],[5,2],[6,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 5,
       "abilities": ["agnes_ab_1","agnes_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "1.jpg"
     },
@@ -26,21 +43,38 @@
       "name": "Akachi Onyele",
       "subline": "Shaman",
       "starting_at": "Ye Olde Magick Shoppe",
-      "stats": [7, 3, 1],
-      "skillsets": {
-        "skillset_1": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[2,3],[3,2],[4,1],[5,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 1],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[2,3],[3,2],[4,1],[5,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 3,
       "abilities": ["akachi_ab_1","akachi_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "48.jpg"
     },
@@ -48,21 +82,38 @@
       "name": "Amanda Sharpe",
       "subline": "Student",
       "starting_at": "Bank of Arkham",
-      "stats": [5, 5, 3],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 3],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 1,
       "abilities": ["amanda_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "2.jpg"
     },
@@ -70,21 +121,38 @@
       "name": "&#34;Ashcan&#34; Pete",
       "subline": "Drifter",
       "starting_at": "River Docks",
-      "stats": [4, 6, 1],
-      "skillsets": {
-        "skillset_1": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_2": [[1,6],[2,5],[3,4],[4,3]],
-        "skillset_3": [[0,4],[1,3],[2,2],[3,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 1],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[0,6],[1,5],[2,4],[3,3]],
+        [[2,5],[3,4],[4,3],[5,2]],
+        [[0,3],[1,2],[2,1],[3,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 1,
       "abilities": ["ashcan_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "3.jpg"
     },
@@ -92,21 +160,38 @@
       "name": "Bob Jenkins",
       "subline": "Salesman",
       "starting_at": "General Store",
-      "stats": [4, 6, 1],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[3,4],[4,3],[5,2],[6,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 1],
+      "sanity": 4,
+      "stamina": 6,
+            "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[3,4],[4,3],[5,2],[6,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 9,
       "abilities": ["bob_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "4.jpg"
     },
@@ -114,21 +199,38 @@
       "name": "Carolyn Fern",
       "subline": "Psychologist",
       "starting_at": "Arkham Asylum",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[0,3],[1,2],[2,1],[3,0]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[2,5],[3,4],[4,3],[5,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[0,3],[1,2],[2,1],[3,0]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[2,5],[3,4],[4,3],[5,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 7,
       "abilities": ["carolyn_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "5.jpg"
     },
@@ -136,21 +238,38 @@
       "name": "Charlie Kane",
       "subline": "Politician",
       "starting_at": "Administration Building",
-      "stats": [4, 6, 2],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 2],
+      "sanity": 4,
+      "stamina": 6,
+            "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 9,
       "abilities": ["charlie_ab_1","charlie_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "6.jpg"
     },
@@ -158,21 +277,38 @@
       "name": "Daisy Walker",
       "subline": "Librarian",
       "starting_at": "Library",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[2,4],[3,3],[4,2],[5,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 5,
       "abilities": ["daisy_ab_1","daisy_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "7.jpg"
     },
@@ -180,21 +316,38 @@
       "name": "Darrell Simmons",
       "subline": "Photographer",
       "starting_at": "Newspaper",
-      "stats": [4, 6, 2],
-      "skillsets": {
-        "skillset_1": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_2": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_3": [[0,4],[1,3],[2,2],[3,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 2],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[0,4],[1,3],[2,2],[3,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 4,
       "abilities": ["darrell_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "8.jpg"
     },
@@ -202,21 +355,38 @@
       "name": "Dexter Drake",
       "subline": "Magician",
       "starting_at": "Ye Olde Magick Shoppe",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[2,3],[3,2],[4,1],[5,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[2,3],[3,2],[4,1],[5,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 5,
       "abilities": ["dexter_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "9.jpg"
     },
@@ -224,21 +394,38 @@
       "name": "Diana Stanley",
       "subline": "Redeemed",
       "starting_at": "Cultist General Store",
-      "stats": [4, 6, 1],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[3,4],[4,3],[5,2],[6,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 1],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[3,4],[4,3],[5,2],[6,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["diana_ab_1","diana_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "10.jpg"
     },
@@ -246,21 +433,38 @@
       "name": "Finn Edwards",
       "subline": "Bootlegger",
       "starting_at": "Bank of Arkham",
-      "stats": [4, 6, 1],
-      "skillsets": {
-        "skillset_1": [[3,5],[4,4],[5,3],[6,2]],
-        "skillset_2": [[0,3],[1,2],[2,1],[3,0]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 1],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[3,5],[4,4],[5,3],[6,2]],
+        [[0,3],[1,2],[2,1],[3,0]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 8,
       "abilities": ["finn_ab_1","finn_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "11.jpg"
     },
@@ -268,21 +472,38 @@
       "name": "George Barnaby",
       "subline": "Lawyer",
       "starting_at": "Library",
-      "stats": [7, 3, 2],
-      "skillsets": {
-        "skillset_1": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_2": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 2],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 7,
       "abilities": ["george_ab_1","george_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "12.jpg"
     },
@@ -290,21 +511,38 @@
       "name": "Gloria Goldberg",
       "subline": "Author",
       "starting_at": "Velmas Diner",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 7,
       "abilities": ["gloria_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "13.jpg"
     },
@@ -312,21 +550,38 @@
       "name": "Hank Samson",
       "subline": "Farmhand",
       "starting_at": "General Store",
-      "stats": [5, 6, 2],
-      "skillsets": {
-        "skillset_1": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_2": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_3": [[0,4],[1,3],[2,2],[3,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 6, 2],
+      "sanity": 5,
+      "stamina": 6,
+      "skillsets": [
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[0,4],[1,3],[2,2],[3,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 3,
       "abilities": ["hank_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "14.jpg"
     },
@@ -334,21 +589,38 @@
       "name": "Harvey Walters",
       "subline": "Professor",
       "starting_at": "Administration Building",
-      "stats": [7, 3, 2],
-      "skillsets": {
-        "skillset_1": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_2": [[0,3],[1,2],[2,1],[3,0]],
-        "skillset_3": [[3,4],[4,3],[5,2],[6,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 2],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[0,3],[1,2],[2,1],[3,0]],
+        [[3,4],[4,3],[5,2],[6,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 5,
       "abilities": ["harvey_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "15.jpg"
     },
@@ -356,21 +628,38 @@
       "name": "Jacqueline Fine",
       "subline": "Psychic",
       "starting_at": "Curiositie Shoppe",
-      "stats": [7, 3, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 2],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[2,4],[3,3],[4,2],[5,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 7,
       "abilities": ["jacqueline_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "16.jpg"
     },
@@ -378,21 +667,38 @@
       "name": "Jenny Barnes",
       "subline": "Dilettante",
       "starting_at": "Train Station",
-      "stats": [6, 4, 1],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 1],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 10,
       "abilities": ["jenny_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "17.jpg"
     },
@@ -400,21 +706,38 @@
       "name": "Jim Culver",
       "subline": "Musician",
       "starting_at": "Velmas Diner",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 3,
       "abilities": ["jim_ab_1","jim_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "18.jpg"
     },
@@ -422,21 +745,38 @@
       "name": "Joe Diamond",
       "subline": "Private Eye",
       "starting_at": "Police Station",
-      "stats": [4, 6, 3],
-      "skillsets": {
-        "skillset_1": [[3,4],[4,3],[5,2],[6,1]],
-        "skillset_2": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_3": [[0,3],[1,2],[2,1],[3,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 3],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[3,4],[4,3],[5,2],[6,1]],
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[0,3],[1,2],[2,1],[3,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 8,
       "abilities": ["joe_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "19.jpg"
     },
@@ -444,21 +784,38 @@
       "name": "Kate Winthrop",
       "subline": "Scientist",
       "starting_at": "Science Building",
-      "stats": [6, 4, 1],
-      "skillsets": {
-        "skillset_1": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 1],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[2,4],[3,3],[4,2],[5,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 7,
       "abilities": ["kate_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "20.jpg"
     },
@@ -466,21 +823,38 @@
       "name": "Leo Anderson",
       "subline": "Expedition Leader",
       "starting_at": "River Docks",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 5,
       "abilities": ["leo_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "21.jpg"
     },
@@ -488,23 +862,40 @@
       "name": "Lily Chen",
       "subline": "Martial Artist",
       "starting_at": "Ye Olde Magick Shoppe",
-      "stats": [6, 5, 2],
-      "skillsets": {
-        "skillset_1": [[4,7],[5,6],[6,5],[7,4]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_4": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Max.Sanity", "Max.Stamina" ],
-        "skillset_2": [ "Speed", "Sneak" ],
-        "skillset_3": [ "Fight", "Will" ],
-        "skillset_4": [ "Lore", "Luck" ]
+      "max_stats": [6, 5, 2],
+      "sanity": 6,
+      "stamina": 5,
+      "skillsets": [
+        [[4,7],[5,6],[6,5],[7,4]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "max_sanity", "max_stamina" ],
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 2, 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["lily_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "22.jpg"
     },
@@ -512,21 +903,38 @@
       "name": "Lola Hayes",
       "subline": "Actress",
       "starting_at": "Arkham Asylum",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_2": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 6,
       "abilities": ["lola_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "23.jpg"
     },
@@ -534,21 +942,38 @@
       "name": "Luke Robinson",
       "subline": "Dreamer",
       "starting_at": "The Dreamlands",
-      "stats": [7, 3, 1],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[1,6],[2,5],[3,4],[4,3]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 1],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,6],[2,5],[3,4],[4,3]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 6,
       "abilities": ["luke_ab_1","luke_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "24.jpg"
     },
@@ -556,21 +981,38 @@
       "name": "Mandy Thompson",
       "subline": "Researcher",
       "starting_at": "Library",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_2": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_3": [[1,3],[2,2],[3,1],[4,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[1,3],[2,2],[3,1],[4,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 4,
       "money": 6,
       "abilities": ["mandy_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "25.jpg"
     },
@@ -578,21 +1020,38 @@
       "name": "Marie Lambeau",
       "subline": "Entertainer",
       "starting_at": "Ma's Boarding House",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["marie_ab_1","marie_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "26.jpg"
     },
@@ -600,21 +1059,38 @@
       "name": "Mark Harrigan",
       "subline": "Soldier",
       "starting_at": "South Church",
-      "stats": [3, 7, 1],
-      "skillsets": {
-        "skillset_1": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_2": [[3,3],[4,2],[5,1],[6,0]],
-        "skillset_3": [[0,4],[1,3],[2,2],[3,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 1],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[3,3],[4,2],[5,1],[6,0]],
+        [[0,4],[1,3],[2,2],[3,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 4,
       "abilities": ["mark_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "27.jpg"
     },
@@ -622,21 +1098,38 @@
       "name": "Michael McGlen",
       "subline": "Gangster",
       "starting_at": "Mas Boarding House",
-      "stats": [3, 7, 1],
-      "skillsets": {
-        "skillset_1": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_2": [[3,4],[4,3],[5,2],[6,1]],
-        "skillset_3": [[0,3],[1,2],[2,1],[3,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 1],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[3,4],[4,3],[5,2],[6,1]],
+        [[0,3],[1,2],[2,1],[3,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 8,
       "abilities": ["michael_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "28.jpg"
     },
@@ -644,21 +1137,38 @@
       "name": "Minh Thi Phan",
       "subline": "Secretary",
       "starting_at": "St Marys Hospital",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[1,3],[2,2],[3,1],[4,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,3],[2,2],[3,1],[4,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["minh_ab_1","minh_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "29.jpg"
     },
@@ -666,21 +1176,38 @@
       "name": "Monterey Jack",
       "subline": "Archeologist",
       "starting_at": "Curiositie Shoppe",
-      "stats": [3, 7, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 2],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 7,
       "abilities": ["monterey_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "30.jpg"
     },
@@ -688,21 +1215,38 @@
       "name": "Norman Withers",
       "subline": "Astronomer",
       "starting_at": "Administration Building",
-      "stats": [6, 4, 2],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_3": [[2,5],[3,4],[4,3],[5,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 2],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[2,5],[3,4],[4,3],[5,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 3,
       "abilities": ["norman_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "31.jpg"
     },
@@ -710,21 +1254,38 @@
       "name": "Patrice Hathaway",
       "subline": "Violinist",
       "starting_at": "Curiositie Shoppe",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[2,3],[3,2],[4,1],[5,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[2,3],[3,2],[4,1],[5,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 2,
       "abilities": ["patrice_ab_1","patrice_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "32.jpg"
     },
@@ -732,21 +1293,38 @@
       "name": "Rex Murphy",
       "subline": "Reporter",
       "starting_at": "Newspaper",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[2,4],[3,3],[4,2],[5,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 3,
       "abilities": ["rex_ab_1","rex_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "33.jpg"
     },
@@ -754,21 +1332,38 @@
       "name": "Rita Young",
       "subline": "Athlete",
       "starting_at": "Police Station",
-      "stats": [4, 6, 2],
-      "skillsets": {
-        "skillset_1": [[3,4],[4,3],[5,2],[6,1]],
-        "skillset_2": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_3": [[0,3],[1,2],[2,1],[3,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 2],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[3,4],[4,3],[5,2],[6,1]],
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[0,3],[1,2],[2,1],[3,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["rita_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "34.jpg"
     },
@@ -776,21 +1371,38 @@
       "name": "Roland Banks",
       "subline": "Fed",
       "starting_at": "Arkham Asylum",
-      "stats": [4, 6, 3],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 3],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 3,
       "abilities": ["roland_ab_1","roland_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "35.jpg"
     },
@@ -798,21 +1410,38 @@
       "name": "Silas Marsh",
       "subline": "Sailor",
       "starting_at": "River Docks",
-      "stats": [4, 6, 2],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[3,4],[4,3],[5,2],[6,1]],
-        "skillset_3": [[1,3],[2,2],[3,1],[4,0]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 2],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[3,4],[4,3],[5,2],[6,1]],
+        [[1,3],[2,2],[3,1],[4,0]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 7,
       "abilities": ["silas_ab_1","silas_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "36.jpg"
     },
@@ -820,21 +1449,38 @@
       "name": "Sister Mary",
       "subline": "Nun",
       "starting_at": "South Church",
-      "stats": [7, 3, 1],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_3": [[1,6],[2,5],[3,4],[4,3]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [7, 3, 1],
+      "sanity": 7,
+      "stamina": 3,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,6],[2,5],[3,4],[4,3]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 0,
       "abilities": ["mary_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "37.jpg"
     },
@@ -842,21 +1488,38 @@
       "name": "&#34;Skids&#34; O'Toole",
       "subline": "Ex-Convict",
       "starting_at": "Mas Boarding House",
-      "stats": [3, 7, 2],
-      "skillsets": {
-        "skillset_1": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_2": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 2],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 5,
       "abilities": ["skids_ab_1","skids_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "38.jpg"
     },
@@ -864,21 +1527,38 @@
       "name": "Tommy Muldoon",
       "subline": "Rookie Cop",
       "starting_at": "Police Station",
-      "stats": [6, 4, 1],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[2,4],[3,3],[4,2],[5,1]],
-        "skillset_3": [[0,6],[1,5],[2,4],[3,3]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [6, 4, 1],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[2,4],[3,3],[4,2],[5,1]],
+        [[0,6],[1,5],[2,4],[3,3]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 2,
       "abilities": ["tommy_ab_1","tommy_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "39.jpg"
     },
@@ -886,21 +1566,38 @@
       "name": "Tony Morgan",
       "subline": "Bounty Hunter",
       "starting_at": "St Marys Hospital",
-      "stats": [3, 7, 2],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_2": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_3": [[0,6],[1,5],[2,4],[3,3]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 2],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[0,6],[1,5],[2,4],[3,3]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 6,
       "abilities": ["tony_ab_1","tony_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "40.jpg"
     },
@@ -908,21 +1605,38 @@
       "name": "Trish Scarborough",
       "subline": "Spy",
       "starting_at": "Newspaper",
-      "stats": [6, 4, 1],
-      "skillsets": {
-        "skillset_1": [[1,3],[2,4],[3,5],[4,6]],
-        "skillset_2": [[1,1],[2,2],[3,3],[4,4]],
-        "skillset_3": [[2,0],[3,1],[4,2],[5,3]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Fight", "Sneak" ],
-        "skillset_2": [ "Lore", "Will" ],
-        "skillset_3": [ "Speed", "Luck" ]
+      "max_stats": [6, 4, 1],
+      "sanity": 6,
+      "stamina": 4,
+      "skillsets": [
+        [[1,3],[2,4],[3,5],[4,6]],
+        [[1,1],[2,2],[3,3],[4,4]],
+        [[2,0],[3,1],[4,2],[5,3]]
+      ],
+      "skillnames": [
+        [ "fight", "sneak" ],
+        [ "lore", "will" ],
+        [ "speed", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 2,
       "money": 4,
       "abilities": ["trish_ab_1","trish_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "41.jpg"
     },
@@ -930,21 +1644,38 @@
       "name": "Ursula Downs",
       "subline": "Explorer",
       "starting_at": "special",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[2,3],[3,2],[4,1],[5,0]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[0,5],[1,4],[2,3],[3,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[2,3],[3,2],[4,1],[5,0]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[0,5],[1,4],[2,3],[3,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 4,
       "abilities": ["ursula_ab_1","ursula_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "42.jpg"
     },
@@ -952,21 +1683,38 @@
       "name": "Vincent Lee",
       "subline": "Doctor",
       "starting_at": "St Marys Hospital",
-      "stats": [5, 5, 2],
-      "skillsets": {
-        "skillset_1": [[0,5],[1,4],[2,3],[3,2]],
-        "skillset_2": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_3": [[2,4],[3,3],[4,2],[5,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 2],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[0,5],[1,4],[2,3],[3,2]],
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[2,4],[3,3],[4,2],[5,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 1,
       "money": 9,
       "abilities": ["vincent_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "AKH",
       "image": "43.jpg"
     },
@@ -974,43 +1722,77 @@
       "name": "Wendy Adams",
       "subline": "Urchin",
       "starting_at": "Bank of Arkham",
-      "stats": [4, 4, 3],
-      "skillsets": {
-        "skillset_1": [[2,6],[3,5],[4,4],[5,3]],
-        "skillset_2": [[0,3],[1,2],[2,1],[3,0]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 4, 3],
+      "sanity": 4,
+      "stamina": 4,
+      "skillsets": [
+        [[2,6],[3,5],[4,4],[5,3]],
+        [[0,3],[1,2],[2,1],[3,0]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 3,
       "money": 3,
       "abilities": ["wendy_ab_1","wendy_ab_2","wendy_ab_3"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "KH",
       "image": "44.jpg"
     },
     {
-      "name": "William Yorick",
+      "name": "william Yorick",
       "subline": "Gravedigger",
       "starting_at": "South Church",
-      "stats": [4, 6, 1],
-      "skillsets": {
-        "skillset_1": [[0,4],[1,3],[2,2],[3,1]],
-        "skillset_2": [[1,6],[2,5],[3,4],[4,3]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [4, 6, 1],
+      "sanity": 4,
+      "stamina": 6,
+      "skillsets": [
+        [[0,4],[1,3],[2,2],[3,1]],
+        [[1,6],[2,5],[3,4],[4,3]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 4,
       "abilities": ["william_ab_1","william_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "45.jpg"
     },
@@ -1018,21 +1800,38 @@
       "name": "Wilson Richards",
       "subline": "Handyman",
       "starting_at": "Train Station",
-      "stats": [5, 5, 4],
-      "skillsets": {
-        "skillset_1": [[1,5],[2,4],[3,3],[4,2]],
-        "skillset_2": [[1,3],[2,2],[3,1],[4,0]],
-        "skillset_3": [[1,4],[2,3],[3,2],[4,1]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [5, 5, 4],
+      "sanity": 5,
+      "stamina": 5,
+      "skillsets": [
+        [[1,5],[2,4],[3,3],[4,2]],
+        [[1,3],[2,2],[3,1],[4,0]],
+        [[1,4],[2,3],[3,2],[4,1]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 0,
       "money": 4,
       "abilities": ["wilson_ab_1","wilson_ab_2"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "DUH",
       "image": "46.jpg"
     },
@@ -1040,21 +1839,38 @@
       "name": "Zoey Samaras",
       "subline": "Chef",
       "starting_at": "Train Station",
-      "stats": [3, 7, 1],
-      "skillsets": {
-        "skillset_1": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_2": [[1,4],[2,3],[3,2],[4,1]],
-        "skillset_3": [[1,5],[2,4],[3,3],[4,2]]
-      },
-      "skillnames": {
-        "skillset_1": [ "Speed", "Sneak" ],
-        "skillset_2": [ "Fight", "Will" ],
-        "skillset_3": [ "Lore", "Luck" ]
+      "max_stats": [3, 7, 1],
+      "sanity": 3,
+      "stamina": 7,
+      "skillsets": [
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,4],[2,3],[3,2],[4,1]],
+        [[1,5],[2,4],[3,3],[4,2]]
+      ],
+      "skillnames": [
+        [ "speed", "sneak" ],
+        [ "fight", "will" ],
+        [ "lore", "luck" ]
+      ],
+      "selected_skills": [ 0, 0, 0 ],
+      "check": {
+        "speed": 0,
+        "sneak": 0,
+        "fight": 0,
+        "will": 0,
+        "lore": 0,
+        "luck": 0
       },
       "clues": 4,
       "money": 2,
       "abilities": ["zoey_ab_1"],
-      "possessions": "",
+      "possessions": {
+        "commons": [],
+        "uniques": [],
+        "spells": [],
+        "skills": [],
+        "allies": []
+      },
       "exp": "INH",
       "image": "47.jpg"
     }
