@@ -6,7 +6,7 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '/ah-tool' : '/',
   configureWebpack: {
     devServer: {
-      disableHostCheck: true,
+      port: 4000,
     },
   },
   chainWebpack: (config) => {

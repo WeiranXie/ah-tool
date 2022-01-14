@@ -5,13 +5,19 @@
   <div id="screen-mythos" :class="[ active ? 'z-2' : 'hidden', 'left-0 absolute w-full h-screen top-0']">
     <div class="fixed w-full bg-bg z-10 flex text-xs justify-around text-center">
       <div class="w-full flex" @click="tabs === 'headline'">
-        <div :class="[!mythos.current.headline ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">{{ $t('mythos.headline') }}</div>
+        <div :class="[!mythos.current.headline ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">
+          {{ $t('mythos.headline') }}
+        </div>
       </div>
       <div class="w-full flex" @click="tabs === 'rumor'">
-        <div :class="[!mythos.current.rumor || mythos.rumor_solved ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">{{ $t('mythos.rumor') }}</div>
+        <div :class="[!mythos.current.rumor || mythos.rumor_solved ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">
+          {{ $t('mythos.rumor') }}
+        </div>
       </div>
-      <div class="w-full flex"  @click="tabs === 'environment'">
-        <div :class="[!mythos.current.environment ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">{{ $t('mythos.environment') }}</div>
+      <div class="w-full flex" @click="tabs === 'environment'">
+        <div :class="[!mythos.current.environment ? 'opacity-20' : '', 'bg-black text-bg w-full py-2 checked-sibling:bg-bg checked-sibling:text-black']">
+          {{ $t('mythos.environment') }}
+        </div>
       </div>
     </div>
 
